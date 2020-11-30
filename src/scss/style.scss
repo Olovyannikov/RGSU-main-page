@@ -1,0 +1,8 @@
+@import "general/variables";
+@import "general/scaffolding";
+@import "general/mixes";
+@import "general/mixins";
+
+//header
+@import "blocks/header/_header.scss";
+@import "blocks/header/_navigation.scss";

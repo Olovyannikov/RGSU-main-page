@@ -1,0 +1,42 @@
+//Заголовки
+
+.title {
+    font-weight: bold;
+    font-size: rem-calc(36);
+    line-height: rem-calc(42);
+    color: $c-black-0;
+    @media (max-width: $tablet) {
+        font-size: rem-calc(24);
+        line-height: rem-calc(28);
+    }
+    &--secondary {
+        font-size: rem-calc(24);
+        line-height: rem-calc(28);
+        font-weight: 500;
+        @media (max-width: $tablet) {
+            font-size: rem-calc(20);
+            line-height: rem-calc(23);
+        }
+    }
+    &--subtitle {
+        font-size: rem-calc(18);
+        line-height: rem-calc(21);
+        font-weight: 500;
+    }
+}
+
+//Контейнер
+
+.container {
+    margin: 0 auto;
+    padding: 0 26px;
+    width: 100%;
+    max-width: 1440px;
+    @media (min-width: $mobile) {
+        padding: 0 110px;
+    }
+
+    @media (min-width: $tablet) {
+        padding: 0 220px;
+    }
+}

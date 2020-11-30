@@ -9,10 +9,10 @@
 5. [FullCalendar](https://chartjs.com/);
 
 # View
-https://olovyannikov.github.io/RGSU-student-portal/build
+https://olovyannikov.github.io/RGSU-main-page/build
 
 # Source code
-https://github.com/Olovyannikov/RGSU-student-portal
+https://github.com/Olovyannikov/RGSU-main-page
 
 # Install
 

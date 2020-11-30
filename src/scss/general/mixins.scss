@@ -1,0 +1,58 @@
+@mixin retina {
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        @content;
+    }
+}
+
+@mixin container {
+    margin: 0 auto;
+    padding: 0 45px;
+    width: 100%;
+    max-width: 1440px;
+    border-radius: 4px;
+
+    @media (max-width: $tablet) {
+        padding: 0 20px;
+    }
+
+    @media (max-width: $mobile) {
+        padding: 0 12px;
+    }
+}
+
+@mixin list-reset {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+@mixin btn-reset {
+    padding: 0;
+    margin: 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+@mixin hover {
+    &:hover {
+        opacity: 0.8;
+    }
+
+    &:focus {
+        outline: none;
+        opacity: 0.7;
+    }
+}
+
+@mixin center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

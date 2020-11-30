@@ -1,0 +1,28 @@
+header.header.js-header
+    .header__container.container
+        .header__logo
+            svg
+                use(href='#logo')
+        input(type="search").header__search
+        button.header__menu-button.js-menu-toggler(aria-label='Открыть меню')
+        nav.header__navigation.navigation.js-navigation
+            ul.navigation__list
+                li.navigation__item
+                    a.navigation__link.js-submenu-link(href="https://google.com") Первый линк
+                    ul.navigation__list.navigation__submenu
+                        li.navigation__item
+                            button.navigation__back Назад
+                                svg(width='12' height='12')
+                                    use(href="#arrow" fill="#FFF")
+                        li.navigation__item
+                            a(href="https://google.com") Второй уровень
+                        li.navigation__item
+                            a(href="https://google.com") Второй уровень
+                        li.navigation__item
+                            a(href="https://google.com") Второй уровень
+                li.navigation__item
+                    a.navigation__link(href="https://google.com") Второй линк
+                li.navigation__item
+                    a.navigation__link(href="https://google.com") Третий линк
+
+
