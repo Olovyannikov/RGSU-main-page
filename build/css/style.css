@@ -452,6 +452,7 @@ textarea:hover {
   -webkit-transform: translateX(0);
       -ms-transform: translateX(0);
           transform: translateX(0);
+  padding-top: 20px;
 }
 
 .navigation__item a {
