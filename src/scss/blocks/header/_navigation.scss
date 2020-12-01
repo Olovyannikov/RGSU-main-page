@@ -18,6 +18,9 @@
         transform: translateX(0);
         padding-top: 20px;
     }
+    &-submenu {
+        background: $c-blue-600;
+    }
 }
 
 .navigation__item {

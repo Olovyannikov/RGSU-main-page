@@ -10,12 +10,17 @@ header.header.js-header
                 li.navigation__item
                     a.navigation__link.js-submenu-link(href="https://google.com") Первый линк
                     ul.navigation__list.navigation__submenu
-                        li.navigation__item.navigation__item--back
-                            button.navigation__back Назад
-                                svg(width='12' height='12')
-                                    use(href="#arrow" fill="#FFF")
+                        button.navigation__back Назад
+                            svg(width='12' height='12')
+                                use(href="#arrow" fill="#FFF")
                         li.navigation__item
                             a(href="https://google.com") Второй уровень
+                            ul.navigation__list.navigation__submenu.navigation__submenu-submenu
+                                button.navigation__back Назад
+                                    svg(width='12' height='12')
+                                        use(href="#arrow" fill="#FFF")
+                                li.navigation__item
+                                    a(href="https://google.com") Третий уровень
                         li.navigation__item
                             a(href="https://google.com") Второй уровень
                         li.navigation__item
