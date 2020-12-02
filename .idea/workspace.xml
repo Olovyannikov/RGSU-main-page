@@ -2,13 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="20fd1486-6c97-43ed-b28d-aee36dd51278" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/build/img/icons/facebook-logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/img/icons/instagram-logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/img/icons/loupe-dark.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/img/icons/vk-logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/img/icons/youtube-logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/icons/facebook-logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/icons/instagram-logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/icons/loupe-dark.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/icons/vk-logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/icons/youtube-logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scss/blocks/header/_dropdown.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scss/blocks/header/_menu.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scss/blocks/header/_social.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/components.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/components.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/css/style.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/css/style.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/img/icons/icons.svg" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/icons/icons.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/js/script.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/js/script.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/js/script.min.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/js/modules/menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/modules/menu.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pug/sections/header/_header.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/pug/sections/header/_header.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/blocks/header/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/blocks/header/_header.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/blocks/header/_navigation.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/blocks/header/_navigation.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/general/scaffolding.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/general/scaffolding.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/general/variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/general/variables.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/style.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,11 +50,15 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1kzzsnUOhfXUnsKY5wqjpyszufL" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -52,12 +76,16 @@
       <workItem from="1606718431785" duration="13496000" />
       <workItem from="1606748898618" duration="621000" />
       <workItem from="1606802527573" duration="2896000" />
-      <workItem from="1606825179567" duration="5769000" />
+      <workItem from="1606825179567" duration="6980000" />
+      <workItem from="1606889851311" duration="18044000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2611" y="365" key="#SCSS_Lint" timestamp="1606720283852">

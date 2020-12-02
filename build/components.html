@@ -15,10 +15,17 @@
             <use href="#logo"></use>
           </svg>
         </div>
-        <input class="header__search" type="search"/>
-        <button class="header__menu-button js-menu-toggler" aria-label="Открыть меню"></button>
+        <div class="header__dropdown dropdown">Личный кабинет
+          <ul class="dropdown__list">
+            <li class="dropdown__item"><a href="#">Линк</a></li>
+            <li class="dropdown__item"><a href="#">Линк 2</a></li>
+            <li class="dropdown__item"><a href="#">Линк 3</a></li>
+          </ul>
+        </div>
+        <input class="header__search" type="search" placeholder="Поиск"/>
+        <button class="header__menu-button js-menu-toggler" aria-label="Открыть меню">Меню</button>
         <nav class="header__navigation navigation js-navigation">
-          <ul class="navigation__list">
+          <ul class="navigation__list navigation__list-main">
             <li class="navigation__item"><a class="navigation__link js-submenu-link" href="https://google.com">Первый линк</a>
               <ul class="navigation__list navigation__submenu">
                 <button class="navigation__back">Назад
@@ -36,14 +43,58 @@
                     <li class="navigation__item"><a href="https://google.com">Третий уровень</a></li>
                   </ul>
                 </li>
+              </ul>
+            </li>
+            <li class="navigation__item"><a class="navigation__link js-submenu-link" href="https://google.com">Второй линк</a>
+              <ul class="navigation__list navigation__submenu">
+                <button class="navigation__back">Назад
+                  <svg width="12" height="12">
+                    <use href="#arrow" fill="#FFF"></use>
+                  </svg>
+                </button>
+                <li class="navigation__item"><a href="https://google.com">Второй уровень 2</a>
+                  <ul class="navigation__list navigation__submenu navigation__submenu-submenu">
+                    <button class="navigation__back">Назад
+                      <svg width="12" height="12">
+                        <use href="#arrow" fill="#FFF"></use>
+                      </svg>
+                    </button>
+                    <li class="navigation__item"><a href="https://google.com">Третий уровень 2</a></li>
+                  </ul>
+                </li>
                 <li class="navigation__item"><a href="https://google.com">Второй уровень</a></li>
                 <li class="navigation__item"><a href="https://google.com">Второй уровень</a></li>
               </ul>
             </li>
-            <li class="navigation__item"><a class="navigation__link" href="https://google.com">Второй линк</a></li>
-            <li class="navigation__item"><a class="navigation__link" href="https://google.com">Третий линк</a></li>
           </ul>
         </nav>
+      </div>
+      <div class="header__menu menu">
+        <ul class="menu__container container">
+          <li class="menu__item"><a href="#">Наш университет</a></li>
+          <li class="menu__item"><a href="#">Студентам</a></li>
+          <li class="menu__item"><a href="#">Поступающим</a></li>
+          <li class="menu__item"><a href="#">Трудоустройство</a></li>
+          <li class="menu__item"><a href="#">Сотрудникам</a></li>
+        </ul>
+        <ul class="social">
+          <li class="social__item social__item--youtube"><a href="#" aria-label="Ссылка на Youtube">Youtube
+              <svg width="25" height="25">
+                <use href="#youtube-logo"></use>
+              </svg></a></li>
+          <li class="social__item social__item--vk"><a href="#" aria-label="Ссылка на VK">VK
+              <svg width="25" height="25">
+                <use href="#vk-logo"></use>
+              </svg></a></li>
+          <li class="social__item social__item--facebook"><a href="#" aria-label="Ссылка на Facebook">Facebook
+              <svg width="25" height="25">
+                <use href="#facebook-logo"></use>
+              </svg></a></li>
+          <li class="social__item social__item--instagram"><a href="#" aria-label="Ссылка на Instagram">Instagram
+              <svg width="25" height="25">
+                <use href="#instagram-logo"></use>
+              </svg></a></li>
+        </ul>
       </div>
     </header>
     <script src="js/script.min.js" type="module"></script>

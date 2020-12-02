@@ -172,22 +172,6 @@ input:not([type="range"]) {
             border-color: $c-red-0;
         }
     }
-    &[type='search'] {
-        -webkit-appearance: textfield;
-        -webkit-box-sizing: content-box;
-        font-family: inherit;
-        font-size: 100%;
-        padding: 10px 0;
-        width: 24px;
-        min-height: 24px;
-        border: none;
-        transition: all .5s;
-        &:focus {
-            width: 48px;
-            background-color: #fff;
-
-        }
-    }
 
 }
 

@@ -3,10 +3,18 @@ header.header.js-header
         .header__logo
             svg
                 use(href='#logo')
-        input(type="search").header__search
-        button.header__menu-button.js-menu-toggler(aria-label='Открыть меню')
+        .header__dropdown.dropdown Личный кабинет
+            ul.dropdown__list
+                li.dropdown__item
+                    a(href="#") Линк
+                li.dropdown__item
+                    a(href="#") Линк 2
+                li.dropdown__item
+                    a(href="#") Линк 3
+        input(type="search" placeholder='Поиск').header__search
+        button.header__menu-button.js-menu-toggler(aria-label='Открыть меню') Меню
         nav.header__navigation.navigation.js-navigation
-            ul.navigation__list
+            ul.navigation__list.navigation__list-main
                 li.navigation__item
                     a.navigation__link.js-submenu-link(href="https://google.com") Первый линк
                     ul.navigation__list.navigation__submenu
@@ -21,13 +29,52 @@ header.header.js-header
                                         use(href="#arrow" fill="#FFF")
                                 li.navigation__item
                                     a(href="https://google.com") Третий уровень
+                li.navigation__item
+                    a.navigation__link.js-submenu-link(href="https://google.com") Второй линк
+                    ul.navigation__list.navigation__submenu
+                        button.navigation__back Назад
+                            svg(width='12' height='12')
+                                use(href="#arrow" fill="#FFF")
+                        li.navigation__item
+                            a(href="https://google.com") Второй уровень 2
+                            ul.navigation__list.navigation__submenu.navigation__submenu-submenu
+                                button.navigation__back Назад
+                                    svg(width='12' height='12')
+                                        use(href="#arrow" fill="#FFF")
+                                li.navigation__item
+                                    a(href="https://google.com") Третий уровень 2
                         li.navigation__item
                             a(href="https://google.com") Второй уровень
                         li.navigation__item
                             a(href="https://google.com") Второй уровень
-                li.navigation__item
-                    a.navigation__link(href="https://google.com") Второй линк
-                li.navigation__item
-                    a.navigation__link(href="https://google.com") Третий линк
+    .header__menu.menu
+        ul.menu__container.container
+            li.menu__item
+                a(href="#") Наш университет
+            li.menu__item
+                a(href="#") Студентам
+            li.menu__item
+                a(href="#") Поступающим
+            li.menu__item
+                a(href="#") Трудоустройство
+            li.menu__item
+                a(href="#") Сотрудникам
+        ul.social
+            li.social__item.social__item--youtube
+                a(href="#" aria-label="Ссылка на Youtube") Youtube
+                    svg(width='25' height='25')
+                        use(href="#youtube-logo")
+            li.social__item.social__item--vk
+                a(href="#" aria-label="Ссылка на VK") VK
+                    svg(width='25' height='25')
+                        use(href="#vk-logo")
+            li.social__item.social__item--facebook
+                a(href="#" aria-label="Ссылка на Facebook") Facebook
+                    svg(width='25' height='25')
+                        use(href="#facebook-logo")
+            li.social__item.social__item--instagram
+                a(href="#" aria-label="Ссылка на Instagram") Instagram
+                    svg(width='25' height='25')
+                        use(href="#instagram-logo")
 
 

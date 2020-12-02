@@ -1,6 +1,12 @@
 .navigation__list {
-    @include list-reset;
+    padding: 0;
+    margin: 0;
+    list-style: none;
     padding-top: 60px;
+}
+
+.navigation__list-main {
+    width: 270px;
 }
 
 .navigation__submenu {
@@ -10,56 +16,89 @@
     left: 10%;
     transform: translateX(100%);
     right: 0;
-    background: $c-blue-400;
-    transition: .5s;
+    background: #1e598b;
+    transition: 0.5s;
     z-index: 2;
-
-    &--active  {
-        transform: translateX(0);
-        padding-top: 20px;
-    }
-    &-submenu {
-        background: $c-blue-600;
+    @media (min-width: $tablet) {
+        background: unset;
     }
 }
 
+.navigation__submenu--active {
+    transform: translateX(0);
+    padding-top: 20px;
+}
+
+.navigation__submenu-submenu {
+    background: #022438;
+}
+
 .navigation__item {
-    a {
-        color: $c-white-0;
-        padding: 0.7rem 20px;
-        line-height: 1.4;
-        font-weight: 700;
-        position: relative;
-        display: block;
-        pointer-events: none;
-        &::after {
-            content: "";
-            display: block;
-            position: absolute;
-            right: 2rem;
-            top: 50%;
-            transform: translateY(-50%);
-            width: 12px;
-            height: 22px;
-            background: url("../img/icons/left-chev.svg") no-repeat center;
+    cursor: pointer;
+    @media (min-width: $tablet) {
+        &:hover {
+            > .navigation__submenu {
+                transform: translateX(0);
+            }
         }
     }
 }
 
+.navigation__item a {
+    color: #ffffff;
+    padding: 0.7rem 20px;
+    line-height: 1.4;
+    font-weight: 700;
+    position: relative;
+    display: block;
+    pointer-events: none;
+
+}
+
+.navigation__item a::after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 2rem;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 12px;
+    height: 22px;
+    background: url("../img/icons/left-chev.svg") no-repeat center;
+    @media (min-width: $tablet) {
+        background: none;
+    }
+}
+
 .navigation__back {
-    @include btn-reset;
+    margin: 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
     color: #fff;
-    padding: .7rem 20px;
+    padding: 0.7rem 20px;
     padding-left: 40px;
     line-height: 1.4;
     font-weight: 700;
     position: relative;
     display: flex;
     align-items: center;
-    position: relative;
-    svg {
-        position: absolute;
-        left: 20px;
-    }
+}
 
+.navigation__back:focus {
+    outline: none;
+}
+
+.navigation__back svg {
+    position: absolute;
+    left: 20px;
+}
+
+.js-submenu-link {
+    @media (min-width: $tablet) {
+        text-transform: uppercase;
+    }
 }

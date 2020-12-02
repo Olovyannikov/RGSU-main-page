@@ -2,32 +2,32 @@ export default () => {
     let header = document.querySelector(`.js-header`);
     let menuToggler = document.querySelector(`.js-menu-toggler`);
     let menuLinks = document.querySelectorAll(`.js-menu-link`);
-    let menuList = document.querySelector(".navigation__list");
     let menuItems = document.querySelectorAll(".navigation__item");
     let backBtn = document.querySelectorAll(".navigation__back");
 
     for (let x = 0; x < backBtn.length; x++) {
         backBtn[x].onclick = (e) => {
-            e.stopPropagation()
-            menuItems[x]
-                .querySelector(".navigation__list")
+            e.stopPropagation();
+            backBtn[x]
+                .closest(".navigation__list")
                 .classList.remove("navigation__submenu--active");
-        }
-    }
-
-    for (let i = 0; i < menuItems.length; i++) {
-        menuItems[i].onclick = function () {
-            if (menuItems[i].querySelector(".navigation__list")) {
-                menuItems[i]
-                    .querySelector(".navigation__list")
-                    .classList.add("navigation__submenu--active");
-                menuItems[i]
-                    .querySelector(".navigation__back")
-                    .classList.add("navigation__back--active");
-            }
         };
     }
 
+    if (document.body.offsetWidth < 769) {
+        for (let i = 0; i < menuItems.length; i++) {
+            menuItems[i].onclick = function () {
+                if (menuItems[i].querySelector(".navigation__list")) {
+                    menuItems[i]
+                        .querySelector(".navigation__list")
+                        .classList.add("navigation__submenu--active");
+                    menuItems[i]
+                        .querySelector(".navigation__back")
+                        .classList.add("navigation__back--active");
+                }
+            };
+        }
+    }
 
     if (menuToggler) {
         menuToggler.addEventListener(`click`, function () {
