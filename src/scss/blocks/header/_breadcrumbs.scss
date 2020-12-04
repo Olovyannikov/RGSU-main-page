@@ -1,0 +1,29 @@
+.breadcrumbs {
+    display: none;
+    @media (min-width: $tablet) {
+        display: flex;
+    }
+}
+
+.breadcrumbs__history {
+    @include list-reset;
+    display: flex;
+}
+
+.breadcrumbs__item:not(:last-child) {
+    &::after {
+        color: $c-grey-300;
+        content: " ﹥ ";
+        text-decoration-line: unset;
+    }
+}
+
+.breadcrumbs__link {
+    color: $c-grey-300;
+    font-size: rem-calc(14);
+    line-height: rem-calc(16);
+    text-decoration-line: underline;
+    &--current {
+        text-decoration-line: none;
+    }
+}

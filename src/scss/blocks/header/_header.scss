@@ -1,5 +1,6 @@
 .header {
     background-color: $c-blue-600;
+    margin-bottom: 24px;
     @media (min-width: $tablet) {
         background-color: $c-white-0;
     }
@@ -102,6 +103,7 @@
         &::placeholder {
             color: $c-blue-600;
             padding-left: 11px;
+            font-size: rem-calc(14);
         }
     }
 }
@@ -162,7 +164,7 @@
         padding-left: 11px;
         text-align: left;
         font-weight: 300;
-        transition: .5s;
+        transition: 0.5s;
         &:before,
         &::after {
             width: 27px;
@@ -222,10 +224,10 @@
     line-height: rem-calc(16);
     position: relative;
     cursor: pointer;
-    transition: .5s;
+    transition: 0.5s;
     &::after {
-        transition: .5s;
-        content: '';
+        transition: 0.5s;
+        content: "";
         position: absolute;
         display: block;
         right: 12px;

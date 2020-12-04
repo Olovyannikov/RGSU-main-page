@@ -1,3 +1,10 @@
+.dropdown {
+    display: none;
+    @media (min-width: $tablet) {
+        display: block;
+    }
+}
+
 .dropdown__list {
     visibility: hidden;
     position: absolute;

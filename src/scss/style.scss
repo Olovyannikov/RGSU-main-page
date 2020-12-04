@@ -1,8 +1,10 @@
+@import "vendor/normalize";
 @import "general/variables";
 @import "general/scaffolding";
 @import "general/rem-calc";
 @import "general/mixes";
 @import "general/mixins";
+@import "vendor/swiper";
 
 //header
 @import "blocks/header/_header.scss";
@@ -10,3 +12,9 @@
 @import "blocks/header/_dropdown.scss";
 @import "blocks/header/_menu.scss";
 @import "blocks/header/_social.scss";
+@import "blocks/header/_breadcrumbs.scss";
+
+//accordion
+@import "blocks/accordion/_accordion.scss";
+
+//gallery

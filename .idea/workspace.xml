@@ -2,33 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="20fd1486-6c97-43ed-b28d-aee36dd51278" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/build/img/icons/facebook-logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/img/icons/instagram-logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/img/icons/loupe-dark.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/img/icons/vk-logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/img/icons/youtube-logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/icons/facebook-logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/icons/instagram-logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/icons/loupe-dark.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/icons/vk-logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/icons/youtube-logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scss/blocks/header/_dropdown.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scss/blocks/header/_menu.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scss/blocks/header/_social.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/js/modules/accordion.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/js/modules/swiper.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pug/sections/accordion/_accordion.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pug/sections/gallery/_gallery.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pug/sections/main/_main.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pug/sections/titles/_titles.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scss/blocks/accordion/_accordion.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scss/blocks/header/_breadcrumbs.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/components.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/components.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/css/style.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/css/style.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/icons/icons.svg" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/icons/icons.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/js/script.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/js/script.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/js/script.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/modules/menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/modules/menu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pug/layouts/_main.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/pug/layouts/_main.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pug/layouts/_svg.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/pug/layouts/_svg.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pug/pages/components.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/pug/pages/components.pug" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pug/sections/header/_header.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/pug/sections/header/_header.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/blocks/header/_dropdown.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/blocks/header/_dropdown.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/blocks/header/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/blocks/header/_header.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/blocks/header/_navigation.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/blocks/header/_navigation.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/general/scaffolding.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/general/scaffolding.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/general/variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/general/variables.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/blocks/header/_menu.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/blocks/header/_menu.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/blocks/header/_social.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/blocks/header/_social.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/general/mixes.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/general/mixes.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/vendor/swiper.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/vendor/swiper.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,8 +40,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="Pug File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -77,7 +76,8 @@
       <workItem from="1606748898618" duration="621000" />
       <workItem from="1606802527573" duration="2896000" />
       <workItem from="1606825179567" duration="6980000" />
-      <workItem from="1606889851311" duration="18044000" />
+      <workItem from="1606889851311" duration="18708000" />
+      <workItem from="1607062289399" duration="10220000" />
     </task>
     <servers />
   </component>

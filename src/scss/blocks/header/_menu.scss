@@ -1,4 +1,9 @@
 .menu {
+    display: none;
+    margin-bottom: 20px;
+    @media (min-width: $tablet) {
+        display: block;
+    }
 }
 
 .menu__container {
@@ -6,6 +11,7 @@
     padding: 0;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .menu__item {
@@ -25,7 +31,7 @@
     &::after {
         position: absolute;
         content: "|";
-        right: -2%;
+        right: -1.9%;
         top: 50%;
         transform: translateY(-50%);
     }
@@ -34,9 +40,9 @@
             content: "";
         }
     }
-    &:last-child {
-        &::after {
-            content: "";
+    &--last-child {
+        &:after {
+            content: '';
         }
     }
 }

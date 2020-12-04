@@ -1,3 +1,8 @@
+.social {
+    display: flex;
+
+}
+
 .social__block {
     @include list-reset;
     display: flex;
@@ -9,9 +14,17 @@
     align-items: center;
     width: 25px;
     height: 25px;
+    margin-right: 12px;
+    &:last-child {
+        padding-right: 0;
+    }
     a {
+        display: block;
         font-size: 0;
         border-radius: 50%;
         padding: 0;
+    }
+    svg {
+        fill: $c-blue-500;
     }
 }

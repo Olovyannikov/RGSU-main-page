@@ -5,23 +5,38 @@
     font-size: rem-calc(36);
     line-height: rem-calc(42);
     color: $c-black-0;
+    margin: 0 0 45px;
     @media (max-width: $tablet) {
         font-size: rem-calc(24);
         line-height: rem-calc(28);
+        margin-bottom: 18px;
     }
     &--secondary {
         font-size: rem-calc(24);
         line-height: rem-calc(28);
         font-weight: 500;
+        margin-bottom: 26px;
         @media (max-width: $tablet) {
             font-size: rem-calc(20);
             line-height: rem-calc(23);
+            margin-bottom: 26px;
         }
     }
     &--subtitle {
         font-size: rem-calc(18);
         line-height: rem-calc(21);
         font-weight: 500;
+        @media (max-width: $tablet) {
+            font-size: rem-calc(18);
+            line-height: rem-calc(21);
+            font-weight: 500;
+        }
+    }
+    &--block {
+        margin-bottom: 30px;
+        @media (max-width: $tablet) {
+            margin-bottom: 40px;
+        }
     }
 }
 
