@@ -1,0 +1,23 @@
+.announcement__wrapper {
+    @media (min-width: $tablet) {
+        width: 658px;
+    }
+}
+
+.announcement__item {
+    border-bottom: 1px solid $c-grey-300;
+    margin-bottom: 16px;
+    .tag-link {
+        margin-bottom: 16px;
+    }
+    &:last-child {
+        border-bottom: none;
+    }
+}
+
+.announcement__descr {
+    font-size: rem-calc(14);
+    line-height: rem-calc(19);
+    margin-top: 10px;
+    margin-bottom: 16px;
+}

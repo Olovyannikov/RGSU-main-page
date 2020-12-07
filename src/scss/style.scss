@@ -1,10 +1,11 @@
+@import "general/rem-calc";
 @import "vendor/normalize";
 @import "general/variables";
 @import "general/scaffolding";
-@import "general/rem-calc";
 @import "general/mixes";
 @import "general/mixins";
 @import "vendor/swiper";
+@import "general/btn";
 
 //header
 @import "blocks/header/_header.scss";
@@ -17,4 +18,17 @@
 //accordion
 @import "blocks/accordion/_accordion.scss";
 
-//gallery
+//text-content
+@import "blocks/text-content/_text-content.scss";
+
+//news-block
+@import "blocks/news-block/_news-block.scss";
+
+//rubricator
+@import "blocks/rubricator/_rubricator.scss";
+
+//announcement
+@import "blocks/announcement/_announcement.scss";
+
+//checkboxes
+@import "blocks/checkboxes/_checkboxes.scss";

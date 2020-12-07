@@ -5,7 +5,7 @@
     font-size: rem-calc(36);
     line-height: rem-calc(42);
     color: $c-black-0;
-    margin: 0 0 45px;
+    margin: 0 0 40px;
     @media (max-width: $tablet) {
         font-size: rem-calc(24);
         line-height: rem-calc(28);
@@ -14,7 +14,7 @@
     &--secondary {
         font-size: rem-calc(24);
         line-height: rem-calc(28);
-        font-weight: 500;
+        font-weight: 600;
         margin-bottom: 26px;
         @media (max-width: $tablet) {
             font-size: rem-calc(20);
@@ -35,7 +35,7 @@
     &--block {
         margin-bottom: 30px;
         @media (max-width: $tablet) {
-            margin-bottom: 40px;
+            margin-bottom: 20px;
         }
     }
 }
@@ -53,5 +53,38 @@
 
     @media (min-width: $tablet) {
         padding: 0 220px;
+    }
+}
+
+//tags
+
+.tag-link {
+    display: inline-block;
+    padding: 4px 21.5px ;
+    font-size: rem-calc(14);
+    line-height: rem-calc(16);
+    color: $c-blue-300;
+    margin-bottom: 10px;
+    border: 1px solid $c-blue-300;
+    border-radius: 2.5px;
+    &--edu {
+        color: $c-purple-0;
+        border-color: $c-purple-0;
+    }
+    &--student {
+        color: $c-purple-100;
+        border-color: $c-purple-100;
+    }
+    &--science {
+        color: $c-green-300;
+        border-color: $c-green-300;
+    }
+    &--work {
+        color: $c-brown-0;
+        border-color: $c-brown-0;
+    }
+    &--achievements {
+        color: $c-green-0;
+        border-color: $c-green-0;
     }
 }

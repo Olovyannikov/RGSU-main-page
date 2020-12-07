@@ -1,0 +1,16 @@
+section.buttons
+    .buttons__container.container
+        h2.buttons__title.title Состояния кнопок
+        .buttons__wrapper
+            .buttons__primary
+                h3.buttons__primary-title.title.title--secondary Primary
+                label(for="regularButton" style="font-size: 14px;color: rgba(51, 51, 51, 0.5); line-height: 19px; margin-bottom: 27px; display: block;") Обычное
+                    button.btn.btn--primary(id="regularButton" style="margin-top: 8px;")  Button
+                label(for="regularButtonDisabled" style="font-size: 14px;color: rgba(51, 51, 51, 0.5); line-height: 19px; margin-bottom: 8px") Отключена
+                    button.btn.btn--primary(id="regularButtonDisabled" disabled=true style="margin-top: 8px;") Button
+            .buttons__secondary
+                h3.buttons__secondary-title.title.title--secondary Secondary
+                label(for="secondaryButton" style="font-size: 14px;color: rgba(51, 51, 51, 0.5); line-height: 19px; margin-bottom: 27px; display: block;") Обычное
+                    button.btn.btn--secondary(id="secondaryButton" style="margin-top: 8px;")  Button
+                label(for="secondaryButtonDisabled" style="font-size: 14px;color: rgba(51, 51, 51, 0.5); line-height: 19px; margin-bottom: 8px") Отключена
+                    button.btn.btn--primary(id="secondaryButtonDisabled" disabled=true style="margin-top: 8px;") Button

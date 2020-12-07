@@ -2,32 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="20fd1486-6c97-43ed-b28d-aee36dd51278" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/js/modules/accordion.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/js/modules/swiper.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pug/sections/accordion/_accordion.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pug/sections/gallery/_gallery.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pug/sections/main/_main.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pug/sections/titles/_titles.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scss/blocks/accordion/_accordion.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scss/blocks/header/_breadcrumbs.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pug/sections/announcement/_announcement.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pug/sections/buttons/_buttons.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pug/sections/checkboxes/_checkboxes.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pug/sections/news-block/_news-block.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pug/sections/rubricator/_rubricator.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pug/sections/text-content/_text-content.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scss/blocks/announcement/_announcement.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scss/blocks/checkboxes/_checkboxes.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scss/blocks/news-block/_news-block.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scss/blocks/rubricator/_rubricator.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scss/blocks/text-content/_text-content.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/components.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/components.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/css/style.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/css/style.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/js/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/js/script.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/js/script.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pug/layouts/_main.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/pug/layouts/_main.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pug/layouts/_svg.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/pug/layouts/_svg.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pug/pages/components.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/pug/pages/components.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pug/sections/header/_header.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/pug/sections/header/_header.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/blocks/header/_dropdown.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/blocks/header/_dropdown.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/blocks/header/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/blocks/header/_header.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/blocks/header/_menu.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/blocks/header/_menu.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/blocks/header/_social.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/blocks/header/_social.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pug/sections/main/_main.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/pug/sections/main/_main.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/general/btn.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/general/btn.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/general/mixes.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/general/mixes.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/vendor/swiper.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/vendor/swiper.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +71,8 @@
       <workItem from="1606802527573" duration="2896000" />
       <workItem from="1606825179567" duration="6980000" />
       <workItem from="1606889851311" duration="18708000" />
-      <workItem from="1607062289399" duration="10220000" />
+      <workItem from="1607062289399" duration="10935000" />
+      <workItem from="1607324503366" duration="10565000" />
     </task>
     <servers />
   </component>
@@ -108,5 +103,9 @@
       <screen x="1920" y="0" width="1920" height="1050" />
     </state>
     <state width="1877" height="278" key="GridCell.Tab.0.right/1920.0.1920.1050/0.0.1920.1050@1920.0.1920.1050" timestamp="1606733604463" />
+    <state x="2543" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1607349729063">
+      <screen x="1920" y="0" width="1920" height="1050" />
+    </state>
+    <state x="2543" y="227" width="672" height="678" key="search.everywhere.popup/1920.0.1920.1050/0.0.1920.1050@1920.0.1920.1050" timestamp="1607349729063" />
   </component>
 </project>
