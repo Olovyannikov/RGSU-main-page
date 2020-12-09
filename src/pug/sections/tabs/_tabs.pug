@@ -1,0 +1,98 @@
+section.tabs
+    .tabs__container.container
+        h2.tabs__title.title.title--block Фильтр направлений подготовки
+        section.tabs-tabs
+            button.tabs-tab.tabs-active(data-actab-group='0' data-actab-id='0') Колледж
+            button.tabs-tab(data-actab-group='0' data-actab-id='1') Бакалавриат и специалитет
+            button.tabs-tab(data-actab-group='0' data-actab-id='2') Магистратура
+            button.tabs-tab(data-actab-group='0' data-actab-id='3') Аспирантура
+        section.tabs-content
+            article.tabs-item.tabs-active(data-actab-group='0' data-actab-id='0')
+                h4.tabs-item__label Колледж
+                .tabs-item__container
+                    input(type="search" placeholder='Поиск по программам').tabs__search
+                    select.tabs__select
+                        option(disabled=true selected=true) Все факультеты
+                        option Факультет
+                        option Факультет
+                        option Факультет
+                    .tabs__radio-wrapper
+                        label(for="collegeFullTime").tabs__radio
+                            input(id="collegeFullTime" type="radio" name='edTime' checked=true).tabs__radio-input
+                            span.tabs__radio-button
+                            span.tabs__radio-text Очная
+                        label(for="collegePartTime").tabs__radio
+                            input(id="collegePartTime" type="radio" name='edTime').tabs__radio-input
+                            span.tabs__radio-button
+                            span.tabs__radio-text Заочная
+                        label(for="collegeNightTime").tabs__radio
+                            input(id="collegeNightTime" type="radio" name='edTime' disabled=true).tabs__radio-input
+                            span.tabs__radio-button
+                            span.tabs__radio-text Очно-заочная
+            article.tabs-item(data-actab-group='0' data-actab-id='1')
+                h4.tabs-item__label Бакалавриат и специалитет
+                .tabs-item__container
+                    input(type="search" placeholder='Поиск по программам').tabs__search
+                    select.tabs__select
+                        option(disabled=true selected=true) Все факультеты
+                        option Факультет
+                        option Факультет
+                        option Факультет
+                    .tabs__radio-wrapper
+                        label(for="bachelorFullTime").tabs__radio
+                            input(id="bachelorFullTime" type="radio" name='bachelorTime' checked=true).tabs__radio-input
+                            span.tabs__radio-button
+                            span.tabs__radio-text Очная
+                        label(for="bachelorPartTime").tabs__radio
+                            input(id="bachelorPartTime" type="radio" name='bachelorTime').tabs__radio-input
+                            span.tabs__radio-button
+                            span.tabs__radio-text Заочная
+                        label(for="bachelorNightTime").tabs__radio
+                            input(id="bachelorNightTime" type="radio" name='bachelorTime' disabled=true).tabs__radio-input
+                            span.tabs__radio-button
+                            span.tabs__radio-text Очно-заочная
+            article.tabs-item(data-actab-group='0' data-actab-id='2')
+                h4.tabs-item__label Магистратура
+                .tabs-item__container
+                    input(type="search" placeholder='Поиск по программам').tabs__search
+                    select.tabs__select
+                        option(disabled=true selected=true) Все факультеты
+                        option Факультет
+                        option Факультет
+                        option Факультет
+                    .tabs__radio-wrapper
+                        label(for="magisterFullTime").tabs__radio
+                            input(id="magisterFullTime" type="radio" name='magisterTime' checked=true).tabs__radio-input
+                            span.tabs__radio-button
+                            span.tabs__radio-text Очная
+                        label(for="magisterPartTime").tabs__radio
+                            input(id="magisterPartTime" type="radio" name='magisterTime').tabs__radio-input
+                            span.tabs__radio-button
+                            span.tabs__radio-text Заочная
+                        label(for="magisterNightTime").tabs__radio
+                            input(id="magisterNightTime" type="radio" name='magisterTime' disabled=true).tabs__radio-input
+                            span.tabs__radio-button
+                            span.tabs__radio-text Очно-заочная
+            article.tabs-item(data-actab-group='0' data-actab-id='3')
+                h4.tabs-item__label Аспирантура
+                .tabs-item__container
+                    input(type="search" placeholder='Поиск по программам').tabs__search
+                    select.tabs__select
+                        option(disabled=true selected=true) Все факультеты
+                        option Факультет
+                        option Факультет
+                        option Факультет
+                    .tabs__radio-wrapper
+                        label(for="aspirantFullTime").tabs__radio
+                            input(id="aspirantFullTime" type="radio" name='aspirantTime' checked=true).tabs__radio-input
+                            span.tabs__radio-button
+                            span.tabs__radio-text Очная
+                        label(for="magisterPartTime").tabs__radio
+                            input(id="aspirantPartTime" type="radio" name='aspirantTime').tabs__radio-input
+                            span.tabs__radio-button
+                            span.tabs__radio-text Заочная
+                        label(for="magisterNightTime").tabs__radio
+                            input(id="aspirantNightTime" type="radio" name='aspirantTime' disabled=true).tabs__radio-input
+                            span.tabs__radio-button
+                            span.tabs__radio-text Очно-заочная
+

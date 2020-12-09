@@ -1,5 +1,6 @@
 section.checkboxes
     .checkboxes__container.container
+        h2.checkboxes__title.title.title--block Состояния чекбоксов
         .checkboxes__wrapper
             label(for="checkOne").checkbox__label Чекбокс
                 input(type='checkbox' id="checkOne").checkbox__input
@@ -9,3 +10,11 @@ section.checkboxes
                 input(type='checkbox' id="checkTwo" checked=true).checkbox__input
                 span.checkbox__appearance
                 span  Выбран
+            label(for="checkThree").checkbox__label Чекбокс
+                input(type='checkbox' id="checkThree" checked=true disabled=true).checkbox__input
+                span.checkbox__appearance
+                span  Отключен - выбран
+            label(for="checkFour").checkbox__label Чекбокс
+                input(type='checkbox' id="checkFour" checked=false disabled=true).checkbox__input
+                span.checkbox__appearance
+                span  Отключен

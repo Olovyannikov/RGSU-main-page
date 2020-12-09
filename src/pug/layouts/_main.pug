@@ -15,5 +15,8 @@ html(lang="ru")
         include ./../sections/header/_header.pug
         block content
         //-include ./../sections/footer/_footer.pug
+        button(type="button" onclick='window.scrollTo(0, 0)').to-up
+            svg(width="51" height="51")
+                use(href="#arrow" fill="#FFFFFF")
 
         script(src="js/script.min.js" type="module")

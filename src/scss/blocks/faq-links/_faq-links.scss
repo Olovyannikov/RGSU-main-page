@@ -1,0 +1,68 @@
+.faq-links__list {
+    @include list-reset;
+    display: flex;
+    flex-wrap: wrap;
+    @media (min-width: $tablet) {
+        justify-content: space-between;
+        gap: 20px;
+    }
+}
+
+.faq-links__link {
+    padding-left: 36px;
+    display: block;
+    position: relative;
+    margin-bottom: 12px;
+    font-size: rem-calc(14);
+    line-height: rem-calc(16);
+    max-width: 274px;
+    &::before {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 20px;
+        height: 23px;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        background: url("../img/icons/pdf.png") no-repeat center;
+        background-size: contain;
+    }
+    &--word {
+        &::before {
+            background: url("../img/icons/word.png") no-repeat center;
+            background-size: contain;
+        }
+    }
+    &--excel {
+        &::before {
+            background: url("../img/icons/excel.png") no-repeat center;
+            background-size: contain;
+        }
+    }
+    &--point {
+        &::before {
+            background: url("../img/icons/point.png") no-repeat center;
+            background-size: contain;
+        }
+    }
+    &--link {
+        &::before {
+            background: url("../img/icons/link.png") no-repeat center;
+            background-size: contain;
+        }
+    }
+    &--pic {
+        &::before {
+            background: url("../img/icons/pic.png") no-repeat center;
+            background-size: contain;
+        }
+    }
+    @media (min-width: $tablet) {
+        margin-bottom: 22px;
+        &::before {
+        width: 30px;
+        height: 40px;
+        }
+    }
+}

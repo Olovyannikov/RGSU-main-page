@@ -1214,6 +1214,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var swip
 
 /***/ }),
 
+/***/ "./src/js/modules/tabs.js":
+/*!********************************!*\
+  !*** ./src/js/modules/tabs.js ***!
+  \********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (function () {\n  var labels = document.querySelectorAll(\".tabs-item__label\");\n  var tabs = document.querySelectorAll(\".tabs-tab\");\n\n  function toggleShow() {\n    var target = this;\n    var item = target.classList.contains(\"tabs-tab\") ? target : target.parentElement;\n    var group = item.dataset.actabGroup;\n    var id = item.dataset.actabId;\n    tabs.forEach(function (tab) {\n      if (tab.dataset.actabGroup === group) {\n        if (tab.dataset.actabId === id) {\n          tab.classList.add(\"tabs-active\");\n        } else {\n          tab.classList.remove(\"tabs-active\");\n        }\n      }\n    });\n    labels.forEach(function (label) {\n      var tabItem = label.parentElement;\n\n      if (tabItem.dataset.actabGroup === group) {\n        if (tabItem.dataset.actabId === id) {\n          tabItem.classList.add(\"tabs-active\");\n        } else {\n          tabItem.classList.remove(\"tabs-active\");\n        }\n      }\n    });\n  }\n\n  labels.forEach(function (label) {\n    label.addEventListener(\"click\", toggleShow);\n  });\n  tabs.forEach(function (tab) {\n    tab.addEventListener(\"click\", toggleShow);\n  });\n});\n\n//# sourceURL=webpack:///./src/js/modules/tabs.js?");
+
+/***/ }),
+
 /***/ "./src/js/script.js":
 /*!**************************!*\
   !*** ./src/js/script.js ***!
@@ -1222,7 +1234,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var swip
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_menu_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/menu.js */ \"./src/js/modules/menu.js\");\n/* harmony import */ var _modules_accordion_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/accordion.js */ \"./src/js/modules/accordion.js\");\n/* harmony import */ var _modules_swiper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/swiper.js */ \"./src/js/modules/swiper.js\");\n\n\n\nObject(_modules_menu_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\nObject(_modules_accordion_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\nObject(_modules_swiper_js__WEBPACK_IMPORTED_MODULE_2__[\"default\"])();\n\n//# sourceURL=webpack:///./src/js/script.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_menu_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/menu.js */ \"./src/js/modules/menu.js\");\n/* harmony import */ var _modules_accordion_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/accordion.js */ \"./src/js/modules/accordion.js\");\n/* harmony import */ var _modules_swiper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/swiper.js */ \"./src/js/modules/swiper.js\");\n/* harmony import */ var _modules_tabs_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/tabs.js */ \"./src/js/modules/tabs.js\");\n\n\n\n\nObject(_modules_menu_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\nObject(_modules_accordion_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\nObject(_modules_swiper_js__WEBPACK_IMPORTED_MODULE_2__[\"default\"])();\nObject(_modules_tabs_js__WEBPACK_IMPORTED_MODULE_3__[\"default\"])();\nvar toUp = document.querySelector('.to-up');\n\nwindow.onscroll = function () {\n  if (window.pageYOffset > 300) {\n    toUp.style.opacity = '1';\n    toUp.style.visibility = 'visible';\n  } else {\n    toUp.style.opacity = '0';\n    toUp.style.visibility = 'hidden';\n  }\n};\n\n//# sourceURL=webpack:///./src/js/script.js?");
 
 /***/ })
 

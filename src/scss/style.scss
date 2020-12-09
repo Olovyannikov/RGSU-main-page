@@ -1,9 +1,9 @@
 @import "general/rem-calc";
 @import "vendor/normalize";
 @import "general/variables";
-@import "general/scaffolding";
 @import "general/mixes";
 @import "general/mixins";
+@import "general/scaffolding";
 @import "vendor/swiper";
 @import "general/btn";
 
@@ -32,3 +32,12 @@
 
 //checkboxes
 @import "blocks/checkboxes/_checkboxes.scss";
+
+//links
+@import "blocks/links/_links.scss";
+
+//tabs
+@import "blocks/tabs/_tabs.scss";
+
+//links
+@import "blocks/faq-links/faq-links.scss";

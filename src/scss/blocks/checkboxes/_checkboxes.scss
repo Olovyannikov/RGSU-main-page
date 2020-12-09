@@ -1,3 +1,7 @@
+.checkboxes {
+    margin-bottom: 33px;
+}
+
 .checkboxes__wrapper {
     display: flex;
     align-items: center;
@@ -10,7 +14,7 @@
     position: relative;
     width: 100%;
     padding-left: 24px;
-    color: #182C40;
+    color: #182c40;
     font-size: rem-calc(14);
     line-height: rem-calc(16);
     margin-bottom: 20px;
@@ -21,7 +25,7 @@
     }
     &:hover {
         .checkbox__appearance {
-            background: #F5f9fe;
+            background: #f5f9fe;
             cursor: pointer;
         }
     }
@@ -42,16 +46,17 @@
     background-color: #fff;
     border: 2px solid $c-grey-200;
     border-radius: 2.5px;
-    transition: 250ms cubic-bezier(.4,.0,.23,1);
+    transition: 250ms cubic-bezier(0.4, 0, 0.23, 1);
 }
 
 //checkboxes state
 
+//checked
 .checkbox__input:checked + .checkbox__appearance {
     border-color: $c-blue-300;
     background: $c-blue-300;
     &::after {
-        content: '';
+        content: "";
         position: absolute;
         display: block;
         width: 2px;
@@ -62,7 +67,7 @@
         transform: rotate(-45deg);
     }
     &::before {
-        content: '';
+        content: "";
         position: absolute;
         display: block;
         width: 2px;
@@ -73,3 +78,45 @@
         transform: rotate(45deg);
     }
 }
+
+//disabled
+
+.checkbox__input:disabled + .checkbox__appearance {
+    border-color: $c-grey-300;
+    background: $c-grey-300;
+    &::after,&::before {
+        content: '';
+        display: none;
+    }
+}
+
+
+//checked-disabled
+
+.checkbox__input:checked:disabled + .checkbox__appearance {
+    border-color: $c-grey-300;
+    background: $c-grey-300;
+    &::after {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 2px;
+        height: 6px;
+        background: $c-white-0;
+        bottom: 15%;
+        left: 21%;
+        transform: rotate(-45deg);
+    }
+    &::before {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 2px;
+        height: 12px;
+        background: $c-white-0;
+        bottom: 10%;
+        left: 57%;
+        transform: rotate(45deg);
+    }
+}
+

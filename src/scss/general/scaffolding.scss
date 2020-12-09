@@ -27,7 +27,6 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 
-
     @media (max-width: $tablet) and (orientation: portrait) {
         min-height: calc(var(--vh, 1vh) * 100);
     }
@@ -159,20 +158,20 @@ input:not([type="range"]) {
     }
     &[type="text"],
     &[type="email"],
-    &[type="password"]{
+    &[type="password"] {
         border: 1px solid #e4ecfa;
         box-sizing: border-box;
         border-radius: 3px;
         padding: 9px 3px 8px 15px;
     }
-    &:hover,&:focus {
+    &:hover,
+    &:focus {
         border-color: $c-blue-300;
         outline: none;
         &:invalid:not(:placeholder-shown) {
             border-color: $c-red-0;
         }
     }
-
 }
 
 input::-webkit-search-decoration,
@@ -186,11 +185,11 @@ select {
     appearance: none;
     font-size: rem-calc(14);
     line-height: 26px;
-    border: 1px solid #BFCAD8;
+    border: 1px solid #bfcad8;
     box-sizing: border-box;
     border-radius: 2.5px;
     cursor: pointer;
-    background: url('../img/icons/icons.svg#vector') 95% center/11px no-repeat;
+    background: url("../img/icons/icons.svg#vector") 95% center/11px no-repeat;
     &:focus,
     &:hover {
         border-color: $c-blue-300;
@@ -215,5 +214,28 @@ textarea {
         border-color: $c-blue-300;
         box-shadow: 0 0 0 1px rgba(156, 186, 240, 0.5);
         outline: none;
+    }
+}
+
+.to-up {
+    display: none;
+    opacity: 0;
+    transition: 1s;
+    visibility: hidden;
+    @media (min-width: $tablet) {
+        @include btn-reset;
+        display: block;
+        position: fixed;
+        width: 90px;
+        height: 90px;
+        bottom: 20px;
+        right: 20px;
+        border-radius: 50%;
+        background: $c-grey-200;
+        transition: 1s;
+        svg {
+            transform: rotate(90deg);
+            transition: 1s;
+        }
     }
 }
