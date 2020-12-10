@@ -2,45 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="20fd1486-6c97-43ed-b28d-aee36dd51278" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/build/img/icons/excel.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/img/icons/excel.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/img/icons/link.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/img/icons/link.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/img/icons/pdf.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/img/icons/pdf.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/img/icons/pic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/img/icons/pic.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/img/icons/point.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/img/icons/point.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/img/icons/word.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/img/icons/word.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/icons/excel.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/icons/link.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/icons/pdf.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/icons/pic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/icons/point.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/icons/word.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/js/modules/tabs.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pug/sections/faq_links/faq_links.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pug/sections/links/_links.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pug/sections/tabs/_tabs.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scss/blocks/faq-links/_faq-links.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scss/blocks/links/_links.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scss/blocks/tabs/_tabs.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/img/icons/check.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/img/icons/vector.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/icons/check.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/icons/vector.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pug/sections/forms/_forms.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pug/sections/table/_table.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scss/blocks/forms/_forms.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scss/blocks/table/_table.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/components.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/components.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/css/style.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/css/style.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/js/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/js/script.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/js/script.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pug/layouts/_main.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/pug/layouts/_main.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pug/layouts/_svg.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/pug/layouts/_svg.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pug/sections/checkboxes/_checkboxes.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/pug/sections/checkboxes/_checkboxes.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pug/sections/faq_links/faq_links.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/pug/sections/faq_links/_faq_links.pug" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pug/sections/main/_main.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/pug/sections/main/_main.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pug/sections/news-block/_news-block.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/pug/sections/news-block/_news-block.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/blocks/checkboxes/_checkboxes.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/blocks/checkboxes/_checkboxes.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/general/mixes.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/general/mixes.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pug/sections/tabs/_tabs.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/pug/sections/tabs/_tabs.pug" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/general/scaffolding.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/general/scaffolding.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/style.scss" afterDir="false" />
     </list>
@@ -95,7 +71,8 @@
       <workItem from="1607062289399" duration="10935000" />
       <workItem from="1607324503366" duration="10729000" />
       <workItem from="1607451568681" duration="53000" />
-      <workItem from="1607494255840" duration="17861000" />
+      <workItem from="1607494255840" duration="18079000" />
+      <workItem from="1607594638983" duration="6888000" />
     </task>
     <servers />
   </component>

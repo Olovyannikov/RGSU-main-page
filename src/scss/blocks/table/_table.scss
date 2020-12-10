@@ -1,0 +1,38 @@
+.table-block {
+    margin-bottom: 33px;
+    overflow: hidden;
+}
+
+.table {
+    border: 1px solid #BFCAD8;
+    border-collapse: collapse;
+    border-radius: 2.5px;
+    display: block;
+}
+
+.table__header {
+    background: #DAE1E9;
+    text-align: left;
+
+}
+
+.table__title, .table__cell {
+    font-size: rem-calc(12);
+    line-height: rem-calc(17);
+    padding: 10px 14px 12px 12px;
+    border-bottom: 1px solid #BFCAD8;
+    border-right: 1px solid #BFCAD8;
+}
+
+.table__row {
+    vertical-align: top;
+    height: 100px;
+    .table__cell:last-child, .table__title:last-child {
+        border-right: none;
+    }
+    &:last-child {
+        .table__cell, .table__title {
+            border-bottom: none;
+        }
+    }
+}

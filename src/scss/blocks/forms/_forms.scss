@@ -1,0 +1,78 @@
+.forms {
+    margin-bottom: 35px;
+}
+
+//input styles
+
+.form__group {
+    position: relative;
+    margin-bottom: 45px;
+}
+
+.forms__email-input {
+    font-size: rem-calc(14);
+    line-height: rem-calc(19);
+    display:block;
+    width: 100%;
+    border: 1px solid #757575;
+    color: $c-black-0;
+    @media (min-width: $tablet) {
+        max-width: 390px;
+    }
+}
+
+.forms__email-label {
+    color:#999;
+    font-size: rem-calc(14);
+    line-height: rem-calc(16);
+    font-weight:normal;
+    position:absolute;
+    pointer-events:none;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition:0.2s ease all;
+}
+
+.forms__email-input:focus ~ .forms__email-label,
+.forms__email-input:valid ~ .forms__email-label {
+    top: 25%;
+    font-size:rem-calc(11);
+    line-height: rem-calc(13);
+    color: $c-grey-200;
+}
+
+.forms__email-input:valid {
+    color: $c-blue-400;
+    background: url("../img/icons/check.svg") no-repeat 98% center;
+    @media (min-width: $tablet) {
+        background-position: 95% center;
+    }
+}
+
+.forms__email-input:focus:valid {
+    border: 1px solid $c-blue-300;
+    color: $c-black-0;
+}
+
+.forms__email-input:valid:focus ~ .forms__email-label {
+    color: $c-blue-300;
+}
+
+.forms__email-input:invalid:focus ~ .forms__email-label {
+    color: $c-red-0;
+}
+
+.forms__email-invalid {
+    visibility: hidden;
+    position: absolute;
+    color: $c-red-0;
+    font-size: rem-calc(11);
+    line-height: rem-calc(13);
+    margin-top: 2px;
+}
+
+.forms__email-input:invalid:focus ~ .forms__email-invalid {
+    visibility: visible;
+}
+

@@ -584,7 +584,6 @@ input:not([type="range"]) {
   min-height: 55px;
   border: 1px solid #BFCAD8;
   border-radius: 2.5px;
-  padding: 10px 20px;
 }
 
 input:not([type="range"])[type="date"]::-webkit-calendar-picker-indicator {
@@ -617,16 +616,19 @@ input:not([type="range"])[type="file"] {
 input:not([type="range"])[type="text"],
 input:not([type="range"])[type="email"],
 input:not([type="range"])[type="password"] {
-  border: 1px solid #e4ecfa;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 3px;
   padding: 9px 3px 8px 15px;
 }
 
+input:not([type="range"])[type="email"] {
+  padding-top: 20px;
+}
+
 input:not([type="range"]):hover,
 input:not([type="range"]):focus {
-  border-color: #337AB7;
+  border-color: #9D9D9D;
   outline: none;
 }
 
@@ -641,6 +643,11 @@ input:not([type="range"]):hover:invalid:not(:-ms-input-placeholder), input:not([
 input:not([type="range"]):hover:invalid:not(:placeholder-shown),
 input:not([type="range"]):focus:invalid:not(:placeholder-shown) {
   border-color: #B7333B;
+}
+
+input:not([type="range"])[type="email"]:focus,
+input:not([type="range"])[type="email"]:hover {
+  border-color: #3888C3;
 }
 
 input::-webkit-search-decoration,
@@ -661,12 +668,15 @@ select {
           box-sizing: border-box;
   border-radius: 2.5px;
   cursor: pointer;
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s;
   background: url("../img/icons/icons.svg#vector") 95% center/11px no-repeat;
 }
 
 select:focus,
 select:hover {
-  border-color: #337AB7;
+  border-color: #9D9D9D;
   outline: none;
 }
 
@@ -2180,6 +2190,121 @@ button.swiper-pagination-bullet {
   background-size: contain;
 }
 
+.forms {
+  margin-bottom: 35px;
+}
+
+.form__group {
+  position: relative;
+  margin-bottom: 45px;
+}
+
+.forms__email-input {
+  font-size: 0.875rem;
+  line-height: 1.1875rem;
+  display: block;
+  width: 100%;
+  border: 1px solid #757575;
+  color: #485667;
+}
+
+.forms__email-label {
+  color: #999;
+  font-size: 0.875rem;
+  line-height: 1rem;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 15px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transition: 0.2s ease all;
+  -o-transition: 0.2s ease all;
+  transition: 0.2s ease all;
+}
+
+.forms__email-input:focus ~ .forms__email-label,
+.forms__email-input:valid ~ .forms__email-label {
+  top: 25%;
+  font-size: 0.6875rem;
+  line-height: 0.8125rem;
+  color: #BFCAD8;
+}
+
+.forms__email-input:valid {
+  color: #1E598B;
+  background: url("../img/icons/check.svg") no-repeat 98% center;
+}
+
+.forms__email-input:focus:valid {
+  border: 1px solid #337AB7;
+  color: #485667;
+}
+
+.forms__email-input:valid:focus ~ .forms__email-label {
+  color: #337AB7;
+}
+
+.forms__email-input:invalid:focus ~ .forms__email-label {
+  color: #B7333B;
+}
+
+.forms__email-invalid {
+  visibility: hidden;
+  position: absolute;
+  color: #B7333B;
+  font-size: 0.6875rem;
+  line-height: 0.8125rem;
+  margin-top: 2px;
+}
+
+.forms__email-input:invalid:focus ~ .forms__email-invalid {
+  visibility: visible;
+}
+
+.table-block {
+  margin-bottom: 33px;
+  overflow: hidden;
+}
+
+.table {
+  border: 1px solid #BFCAD8;
+  border-collapse: collapse;
+  border-radius: 2.5px;
+  display: block;
+}
+
+.table__header {
+  background: #DAE1E9;
+  text-align: left;
+}
+
+.table__title,
+.table__cell {
+  font-size: 0.75rem;
+  line-height: 1.0625rem;
+  padding: 10px 14px 12px 12px;
+  border-bottom: 1px solid #BFCAD8;
+  border-right: 1px solid #BFCAD8;
+}
+
+.table__row {
+  vertical-align: top;
+  height: 100px;
+}
+
+.table__row .table__cell:last-child,
+.table__row .table__title:last-child {
+  border-right: none;
+}
+
+.table__row:last-child .table__cell,
+.table__row:last-child .table__title {
+  border-bottom: none;
+}
+
 @media (min-width: 768px) {
   .container {
     padding: 0 110px;
@@ -2608,6 +2733,14 @@ button.swiper-pagination-bullet {
   .faq-links__link::before {
     width: 30px;
     height: 40px;
+  }
+
+  .forms__email-input {
+    max-width: 390px;
+  }
+
+  .forms__email-input:valid {
+    background-position: 95% center;
   }
 }
 
