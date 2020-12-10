@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="20fd1486-6c97-43ed-b28d-aee36dd51278" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/build/img/main.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/blocks/header/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/blocks/header/_header.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -62,7 +61,7 @@
       <workItem from="1607324503366" duration="10729000" />
       <workItem from="1607451568681" duration="53000" />
       <workItem from="1607494255840" duration="17861000" />
-      <workItem from="1607606057975" duration="158000" />
+      <workItem from="1607606057975" duration="273000" />
     </task>
     <servers />
   </component>
