@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="20fd1486-6c97-43ed-b28d-aee36dd51278" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/aws.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/components.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/css/style.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/css/style.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/js/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/js/script.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/js/script.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pug/sections/faq_links/faq_links.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/pug/sections/faq_links/faq_links.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/img/main.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/blocks/header/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/blocks/header/_header.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -69,6 +62,7 @@
       <workItem from="1607324503366" duration="10729000" />
       <workItem from="1607451568681" duration="53000" />
       <workItem from="1607494255840" duration="17861000" />
+      <workItem from="1607606057975" duration="158000" />
     </task>
     <servers />
   </component>
@@ -85,6 +79,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
