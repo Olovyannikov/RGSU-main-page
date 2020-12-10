@@ -2,47 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="20fd1486-6c97-43ed-b28d-aee36dd51278" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/build/img/icons/excel.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/img/icons/excel.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/img/icons/link.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/img/icons/link.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/img/icons/pdf.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/img/icons/pdf.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/img/icons/pic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/img/icons/pic.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/img/icons/point.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/img/icons/point.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/img/icons/word.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/img/icons/word.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/icons/excel.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/icons/link.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/icons/pdf.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/icons/pic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/icons/point.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/icons/word.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/js/modules/tabs.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pug/sections/faq_links/faq_links.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pug/sections/links/_links.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pug/sections/tabs/_tabs.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scss/blocks/faq-links/_faq-links.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scss/blocks/links/_links.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scss/blocks/tabs/_tabs.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/aws.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/components.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/components.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/css/style.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/css/style.min.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/js/script.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/js/script.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/js/script.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pug/layouts/_main.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/pug/layouts/_main.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pug/layouts/_svg.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/pug/layouts/_svg.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pug/sections/checkboxes/_checkboxes.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/pug/sections/checkboxes/_checkboxes.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pug/sections/main/_main.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/pug/sections/main/_main.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pug/sections/news-block/_news-block.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/pug/sections/news-block/_news-block.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/blocks/checkboxes/_checkboxes.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/blocks/checkboxes/_checkboxes.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/general/mixes.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/general/mixes.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/general/scaffolding.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/general/scaffolding.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pug/sections/faq_links/faq_links.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/pug/sections/faq_links/faq_links.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/blocks/header/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/blocks/header/_header.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,8 +41,13 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="C:\Users\excal\OneDrive\Документы\GitHub\RGSU-main-page\node_modules\prettier" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -102,33 +75,18 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="2611" y="365" key="#SCSS_Lint" timestamp="1606720283852">
-      <screen x="1920" y="0" width="1920" height="1050" />
-    </state>
-    <state x="2611" y="365" key="#SCSS_Lint/1920.0.1920.1050/0.0.1920.1050@1920.0.1920.1050" timestamp="1606720283852" />
-    <state width="1877" height="278" key="GridCell.Tab.0.bottom" timestamp="1606733604463">
-      <screen x="1920" y="0" width="1920" height="1050" />
-    </state>
-    <state width="1877" height="278" key="GridCell.Tab.0.bottom/1920.0.1920.1050/0.0.1920.1050@1920.0.1920.1050" timestamp="1606733604463" />
-    <state width="1877" height="278" key="GridCell.Tab.0.center" timestamp="1606733604463">
-      <screen x="1920" y="0" width="1920" height="1050" />
-    </state>
-    <state width="1877" height="278" key="GridCell.Tab.0.center/1920.0.1920.1050/0.0.1920.1050@1920.0.1920.1050" timestamp="1606733604463" />
-    <state width="1877" height="278" key="GridCell.Tab.0.left" timestamp="1606733604463">
-      <screen x="1920" y="0" width="1920" height="1050" />
-    </state>
-    <state width="1877" height="278" key="GridCell.Tab.0.left/1920.0.1920.1050/0.0.1920.1050@1920.0.1920.1050" timestamp="1606733604463" />
-    <state width="1877" height="278" key="GridCell.Tab.0.right" timestamp="1606733604463">
-      <screen x="1920" y="0" width="1920" height="1050" />
-    </state>
-    <state width="1877" height="278" key="GridCell.Tab.0.right/1920.0.1920.1050/0.0.1920.1050@1920.0.1920.1050" timestamp="1606733604463" />
-    <state x="2543" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1607349729063">
-      <screen x="1920" y="0" width="1920" height="1050" />
-    </state>
-    <state x="2543" y="227" width="672" height="678" key="search.everywhere.popup/1920.0.1920.1050/0.0.1920.1050@1920.0.1920.1050" timestamp="1607349729063" />
   </component>
 </project>
