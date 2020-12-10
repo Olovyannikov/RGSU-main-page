@@ -89,10 +89,10 @@
         &:focus {
             padding-top: 10px;
             height: 42px;
-            width: 110px;
+            width: 220px;
             padding-bottom: 10px;
             box-sizing: border-box;
-            background: $c-grey-200 url("../img/icons/loupe.svg") no-repeat 75px
+            background: $c-grey-100 url("../img/icons/loupe.svg") no-repeat 185px
                 center;
             background-size: 15px;
             &::placeholder {

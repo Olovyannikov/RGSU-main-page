@@ -131,6 +131,7 @@ input:not([type="range"]) {
     min-height: 55px;
     border: 1px solid $c-grey-200;
     border-radius: 2.5px;
+    padding: 10px 20px;
     &[type="date"]::-webkit-calendar-picker-indicator {
         color: transparent;
         opacity: 1;
@@ -158,23 +159,18 @@ input:not([type="range"]) {
     &[type="text"],
     &[type="email"],
     &[type="password"] {
+        border: 1px solid #e4ecfa;
         box-sizing: border-box;
         border-radius: 3px;
         padding: 9px 3px 8px 15px;
     }
-    &[type="email"] {
-        padding-top: 20px;
-    }
     &:hover,
     &:focus {
-        border-color: $c-grey-300;
+        border-color: $c-blue-300;
         outline: none;
         &:invalid:not(:placeholder-shown) {
             border-color: $c-red-0;
         }
-    }
-    &[type="email"]:focus, &[type="email"]:hover {
-        border-color: $c-blue-200;
     }
 }
 
@@ -193,11 +189,10 @@ select {
     box-sizing: border-box;
     border-radius: 2.5px;
     cursor: pointer;
-    transition: .2s;
     background: url("../img/icons/icons.svg#vector") 95% center/11px no-repeat;
     &:focus,
     &:hover {
-        border-color: $c-grey-300;
+        border-color: $c-blue-300;
         outline: none;
     }
 }
