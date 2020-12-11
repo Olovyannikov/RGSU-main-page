@@ -12,7 +12,7 @@ let toUp = document.querySelector('.to-up');
 
 window.onscroll = () => {
     if (window.pageYOffset > 300) {
-        toUp.style.opacity = '1';
+        toUp.style.opacity = '0.5';
         toUp.style.visibility = 'visible';
     } else {
         toUp.style.opacity = '0';
@@ -20,3 +20,11 @@ window.onscroll = () => {
     }
 }
 
+toUp.addEventListener('mouseover', ()=> {
+    toUp.style.opacity = '1';
+});
+
+
+toUp.addEventListener('mouseout', ()=> {
+    toUp.style.opacity = '0.5';
+})

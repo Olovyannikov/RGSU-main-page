@@ -1,0 +1,132 @@
+.footer {
+    background: $c-blue-500;
+    padding-top: 40px;
+}
+
+.footer__container {
+    @media (min-width: 1074px) {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+}
+
+.footer__title {
+    color: $c-white-0;
+    font-size: rem-calc(18);
+    line-height: rem-calc(21);
+    margin: 0 0 19px;
+    @media (min-width: $tablet) {
+        margin-bottom: 11px;
+    }
+}
+
+.footer__wrapper:first-child {
+    @media (min-width: $tablet) {
+        width: 130px;
+        margin-right: 70px;
+    }
+}
+
+.footer__wrapper:not(:first-child) {
+    display: none;
+    @media (min-width: 1074px) {
+        display: block;
+        width: 180px;
+    }
+}
+
+.footer__list {
+    @include list-reset;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 26px;
+    a {
+        color: rgba($c-white-0, 0.7);
+        font-size: rem-calc(12);
+        line-height: rem-calc(17);
+        span {
+            color: $c-white-0;
+        }
+        &:hover {
+            color: $c-white-0;
+        }
+    }
+    @media (min-width: $tablet) {
+        a {
+            font-size: rem-calc(14);
+            line-height: rem-calc(26);
+        }
+    }
+}
+
+.footer__list-item {
+    width: 171px;
+    margin-bottom: 10px;
+}
+
+.footer__list--contacts {
+    @media (min-width: $tablet) {
+        a {
+            font-size: rem-calc(12);
+            line-height: rem-calc(17);
+        }
+    }
+}
+
+//social
+.footer__social {
+    @media (min-width: $tablet) {
+        background: #022438;
+    }
+}
+
+.footer {
+    hr {
+        margin: 0;
+        opacity: 0.15;
+        border: 1px solid #FFFFFF;
+        @media (min-width: $tablet) {
+            display: none;
+        }
+    }
+    .social {
+        padding-top: 20px;
+        padding-left: 0;
+        padding-bottom: 30px;
+        margin: 0;
+        svg {
+            fill: #e3e3e3;
+            &:hover {
+                fill: $c-white-0;
+            }
+        }
+        @media (min-width: $tablet) {
+            justify-content: center;
+            padding-bottom: 7px;
+        }
+    }
+    .social__title {
+        color: $c-white-0;
+        font-weight: bold;
+        padding-top: 34px;
+        @media (min-width: $tablet) {
+            display: none;
+        }
+    }
+}
+
+.footer__copy {
+    margin: 0;
+    font-size: rem-calc(14);
+    line-height: rem-calc(31);
+    color: rgba(255, 255, 255, 0.7);
+    background: #022438;
+    text-align: left;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 17px;
+    @media (min-width: $tablet) {
+        text-align: center;
+    }
+}

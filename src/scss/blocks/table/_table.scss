@@ -1,13 +1,17 @@
 .table-block {
     margin-bottom: 33px;
-    overflow: hidden;
 }
 
 .table {
     border: 1px solid #BFCAD8;
     border-collapse: collapse;
     border-radius: 2.5px;
-    display: block;
+    display: inline-block;
+    overflow: scroll;
+    max-width: 100%;
+    @media (min-width: $tablet) {
+        overflow: unset;
+    }
 }
 
 .table__header {
@@ -17,16 +21,21 @@
 }
 
 .table__title, .table__cell {
-    font-size: rem-calc(12);
-    line-height: rem-calc(17);
-    padding: 10px 14px 12px 12px;
-    border-bottom: 1px solid #BFCAD8;
-    border-right: 1px solid #BFCAD8;
+    font-size: rem-calc(7.5);
+    line-height: rem-calc(10);
+    padding: 4px 3px;
+    border-bottom: 1px solid $c-grey-200;
+    border-right: 1px solid $c-grey-200;
+    @media (min-width: $tablet) {
+        font-size: rem-calc(12);
+        line-height: rem-calc(17);
+        padding: 10px 12px;
+    }
 }
 
 .table__row {
     vertical-align: top;
-    height: 100px;
+    height: 60px;
     .table__cell:last-child, .table__title:last-child {
         border-right: none;
     }
@@ -35,4 +44,8 @@
             border-bottom: none;
         }
     }
+}
+
+.table__cell:hover {
+    background: $c-grey-0;
 }

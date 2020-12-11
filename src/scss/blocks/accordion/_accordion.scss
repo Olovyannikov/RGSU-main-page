@@ -28,18 +28,25 @@
             padding-top: 25px;
             padding-bottom: 25px;
         }
-        &:hover, &:focus {
+        &:hover,
+        &:focus {
             cursor: pointer;
             .accordion-title {
                 color: $c-blue-400;
             }
+            .icon {
+                &::after,
+                &::before {
+                    background: #337ab7;
+                }
+            }
         }
         .icon {
-            transition: .5s;
+            transition: 0.5s;
             display: block;
             position: absolute;
             top: 50%;
-            right:0;
+            right: 0;
             width: 15px;
             height: 15px;
             border-radius: 22px;
@@ -47,27 +54,27 @@
             &::before {
                 display: block;
                 position: absolute;
-                content: '';
+                content: "";
                 top: 50%;
-                transform: translate(-50%,-50%);
+                transform: translate(-50%, -50%);
                 width: 100%;
                 height: 2px;
-                background: #888A97;
+                background: #888a97;
             }
             &::after {
                 display: block;
                 position: absolute;
-                content: '';
+                content: "";
                 top: 46%;
                 left: -45%;
-                width:100%;
+                width: 100%;
                 height: 2px;
                 transform: rotate(90deg);
-                background: #888A97;
+                background: #888a97;
             }
         }
     }
-    .accordion-button[aria-expanded='true'] {
+    .accordion-button[aria-expanded="true"] {
         .icon {
             transform: rotate(45deg);
         }
@@ -96,7 +103,7 @@
 }
 
 .accordion__title {
-    border-bottom: 1px solid #BFCAD8;
+    border-bottom: 1px solid #bfcad8;
     padding-bottom: 40px;
     margin: 0;
 }

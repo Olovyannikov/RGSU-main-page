@@ -1,0 +1,111 @@
+.images__item {
+    position: relative;
+    display: block;
+    margin-bottom: 30px;
+    border-radius: 2.5px;
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(
+            180deg,
+            rgba(0, 49, 79, 0.6) 99.99%,
+            rgba(255, 255, 255, 0) 100%
+        );
+        transition: all 0.3s ease;
+        border-radius: 2.5px;
+    }
+    @media (min-width: $tablet) {
+        &::after {
+            background: rgba(0, 49, 79, 0.25);
+        }
+        &:hover {
+            &::after {
+                background: rgba(0, 49, 79, 0.7);
+            }
+
+        }
+    }
+}
+
+.images__image {
+    width: 100%;
+    height: 191px;
+    object-fit: cover;
+    border-radius: 2.5px;
+}
+
+.images__cover {
+    position: absolute;
+    top: 21px;
+    left: 28px;
+    color: $c-white-0;
+    width: 188px;
+    z-index: 2;
+}
+
+.images__cover-title {
+    font-size: rem-calc(20);
+    line-height: rem-calc(23);
+    margin: 0 0 10px;
+    font-weight: bold;
+    @media (min-width: $tablet) {
+        font-size: rem-calc(36);
+        line-height: rem-calc(42);
+    }
+}
+
+.images__descr {
+    font-size: rem-calc(14);
+    line-height: rem-calc(20);
+}
+
+.images__wrapper {
+    @media (min-width: $tablet) {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        gap: 20px;
+        img {
+            height: 490px;
+        }
+        .images__title {
+        }
+    }
+}
+
+.images__wrapper-middle {
+    @media (min-width: $tablet) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        img {
+            width: 325px;
+            height: 325px;
+        }
+        .images__cover-title {
+            font-size: rem-calc(24);
+            line-height: rem-calc(28);
+        }
+    }
+}
+
+.images__wrapper-small {
+    @media (min-width: $tablet) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        img {
+            width: 240px;
+            height: 240px;
+        }
+
+        .images__cover-title {
+            font-size: rem-calc(18);
+            line-height: rem-calc(21);
+        }
+    }
+}

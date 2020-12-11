@@ -1,0 +1,39 @@
+.face-list__list {
+    @include list-reset;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.face-list__item {
+    margin-bottom: 30px;
+    max-width: 362px;
+    @media (min-width: $mobile) {
+        max-width: 325px;
+    }
+}
+
+.face-list__link {
+    color: $c-black-0;
+}
+
+.face-list__name {
+    color: #000;
+    margin-top: 13px;
+    margin-bottom: 15px;
+    font-size: rem-calc(14);
+    line-height: rem-calc(16);
+}
+
+.face-list__job {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: rem-calc(14);
+    line-height: rem-calc(20);
+}
+
+.face-list__descr {
+    margin: 0;
+    font-size: rem-calc(14);
+    line-height: rem-calc(20);
+}

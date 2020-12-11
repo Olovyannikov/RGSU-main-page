@@ -194,7 +194,7 @@ select {
     border-radius: 2.5px;
     cursor: pointer;
     transition: .2s;
-    background: url("../img/icons/icons.svg#vector") 95% center/11px no-repeat;
+    background: url("../img/icons/vector.svg") 95% center/11px no-repeat;
     &:focus,
     &:hover {
         border-color: $c-grey-300;

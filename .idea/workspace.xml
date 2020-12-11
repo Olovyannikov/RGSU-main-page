@@ -2,7 +2,39 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="20fd1486-6c97-43ed-b28d-aee36dd51278" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/scss/blocks/header/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/blocks/header/_header.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/img/living.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/img/living.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/img/rgsu.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/img/rgsu.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/living.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/rgsu.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pug/sections/face-list/_face-list.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pug/sections/fast-links/_fast-links.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pug/sections/footer/_footer.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pug/sections/hotels/_hotels.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pug/sections/images/_images.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pug/sections/slider/_slider.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scss/blocks/face-list/_face-list.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scss/blocks/fast-links/_fast-links.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scss/blocks/footer/_footer.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scss/blocks/hotels/_hotels.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scss/blocks/images/_images.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scss/blocks/slider/_slider.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/components.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/components.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/css/style.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/css/style.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/js/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/js/script.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/js/script.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/modules/swiper.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/modules/swiper.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pug/layouts/_main.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/pug/layouts/_main.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pug/sections/main/_main.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/pug/sections/main/_main.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/blocks/accordion/_accordion.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/blocks/accordion/_accordion.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/blocks/table/_table.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/blocks/table/_table.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/general/scaffolding.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/general/scaffolding.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/vendor/swiper.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/vendor/swiper.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +93,8 @@
       <workItem from="1607324503366" duration="10729000" />
       <workItem from="1607451568681" duration="53000" />
       <workItem from="1607494255840" duration="17861000" />
-      <workItem from="1607606057975" duration="273000" />
+      <workItem from="1607606057975" duration="321000" />
+      <workItem from="1607667262425" duration="18843000" />
     </task>
     <servers />
   </component>
@@ -82,5 +115,11 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2536" y="243" key="run.anything.popup" timestamp="1607698756213">
+      <screen x="1920" y="0" width="1920" height="1050" />
+    </state>
+    <state x="2536" y="243" key="run.anything.popup/1920.0.1920.1050/0.0.1920.1050@1920.0.1920.1050" timestamp="1607698756213" />
   </component>
 </project>

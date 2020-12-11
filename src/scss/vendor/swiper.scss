@@ -26,7 +26,7 @@
 }
 .swiper-button-prev,
 .swiper-button-next {
-    background: url("../img/arrow.svg") no-repeat center;
+    background: url("../img/icons/left-chev.svg") no-repeat center;
     width: 24px;
     height: 18px;
     background-size: cover;
@@ -60,7 +60,8 @@
     z-index: 10;
     justify-content: space-between;
     align-items: center;
-    width: 38px;
+    width: 30px;
+    margin: 0 auto;
 }
 .swiper-pagination.swiper-pagination-hidden {
     opacity: 0;
@@ -94,13 +95,13 @@
     transform: scale(0.33);
 }
 .swiper-pagination-bullet {
-    width: 2px;
-    height: 15px;
+    width: 6px;
+    height:6px;
     display: inline-block;
-    border-radius: 2px;
-    background: #000;
-    opacity: 0.2;
+    border-radius: 50%;
+    background: #fff;
     transition: 0.5s;
+    border: 1px solid #9d9d9d;
 }
 button.swiper-pagination-bullet {
     margin: 0;
@@ -114,14 +115,14 @@ button.swiper-pagination-bullet {
 }
 .swiper-pagination-bullet-active {
     opacity: 1;
-    background: var(--swiper-pagination-color, var(--swiper-theme-color));
-    height: 26px;
+    background: #9d9d9d;
+    height: 6px;
 }
 
 .swiper-container-horizontal
     > .swiper-pagination-bullets
     .swiper-pagination-bullet {
-    margin: 0 4px;
+    margin-top: 6px;
 }
 .swiper-container-horizontal
     > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic {

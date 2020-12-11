@@ -1,0 +1,80 @@
+.hotels__list {
+    @include list-reset;
+    margin-bottom: 35px;
+    @media (min-width: $tablet) {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.hotels__item {
+    background: #F2F4F8;
+    margin-bottom: 35px;
+    position: relative;
+    display: inline-block;
+}
+
+.hotels__picture {
+    border-radius: 2.5px;
+    margin: 0;
+    picture {
+        display: inline-block;
+        position: relative;
+        &::after {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            position: absolute;
+            background: rgba(0, 0, 0, 0.35);
+            border-radius: 2.5px;
+            transition: .2s;
+        }
+        &:hover {
+            &::after {
+                background: none;
+            }
+        }
+    }
+    figcaption {
+        font-size: rem-calc(14);
+        line-height: rem-calc(19);
+        color: $c-black-0;
+        margin: 0;
+        margin-left: 20px;
+        margin-top: 8px;
+        padding-bottom: 9px;
+    }
+}
+
+.hotels__info {
+    position: absolute;
+    top: 17px;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    a {
+        color: $c-white-0;
+        text-decoration: underline;
+    }
+}
+
+.hotels__item-title {
+    font-size: rem-calc(16);
+    line-height: rem-calc(19);
+    margin-bottom: 14px;
+}
+
+.hotels__item-contacts {
+    font-size: rem-calc(12);
+    line-height: rem-calc(17);
+}
+
+.hotels__find {
+    font-size: rem-calc(12);
+    line-height: rem-calc(17);
+}
