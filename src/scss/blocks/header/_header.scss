@@ -1,6 +1,5 @@
 .header {
     background-color: $c-blue-600;
-    margin-bottom: 24px;
     @media (min-width: $tablet) {
         background-color: $c-white-0;
     }
@@ -125,7 +124,7 @@
     position: relative;
     display: block;
     transition: 0.5s;
-    z-index: 2;
+    z-index: 4;
     &:before,
     &::after {
         transition: 0.5s;
@@ -197,7 +196,7 @@
 
 .header__navigation {
     position: fixed;
-    z-index: 1;
+    z-index: 3;
     background: $c-blue-600;
     width: 100%;
     top: 0;
@@ -210,7 +209,10 @@
     overflow-y: scroll;
     .menu-opened & {
         transform: translateX(0%);
-        overflow-x: hidden;
+        overflow: hidden;
+    }
+    @media (min-width: $tablet) {
+        padding-left: 50px;
     }
 }
 

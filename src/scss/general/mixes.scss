@@ -6,6 +6,7 @@
     line-height: rem-calc(42);
     color: $c-black-0;
     margin: 0 0 40px;
+    width: 100%;
     @media (max-width: $tablet) {
         font-size: rem-calc(24);
         line-height: rem-calc(28);
@@ -15,11 +16,11 @@
         font-size: rem-calc(24);
         line-height: rem-calc(28);
         font-weight: 600;
-        margin-bottom: 26px;
+        margin-bottom: 0px;
         @media (max-width: $tablet) {
             font-size: rem-calc(20);
             line-height: rem-calc(23);
-            margin-bottom: 26px;
+            margin-bottom: 25px;
         }
     }
     &--subtitle {

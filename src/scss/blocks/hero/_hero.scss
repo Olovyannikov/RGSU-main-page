@@ -1,0 +1,40 @@
+.hero__container {
+
+}
+
+.hero__title {
+    color: $c-white-0;
+    font-size: rem-calc(18);
+    line-height: rem-calc(21);
+    font-weight: 500;
+    margin: 0;
+    padding: 13px 20px;
+    background: #9d9d9d;
+    display: inline-block;
+    position: absolute;
+    bottom: 171px;
+}
+
+.hero__descr {
+    font-weight: 500;
+    font-size: rem-calc(20);
+    line-height: rem-calc(23);
+    color: #485667;
+    display: inline-block;
+    padding: 18px 30px;
+    position: absolute;
+    bottom: 114px;
+    background: $c-white-0;
+}
+
+.hero__more {
+    position: absolute;
+    bottom: 54px;
+    font-size: rem-calc(16);
+    line-height: rem-calc(19);
+    color: #337AB7;
+    padding: 10px 26px;
+    background: $c-white-0;
+    border-radius: 2.5px;
+    font-weight: bold;
+}

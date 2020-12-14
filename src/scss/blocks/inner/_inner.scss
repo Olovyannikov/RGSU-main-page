@@ -1,0 +1,46 @@
+.inner__container {
+    display: flex;
+    flex-wrap: wrap;
+    picture {
+        max-width: 1000px;
+        margin: 0 auto 20px;
+    }
+}
+
+.inner__info {
+    order: 2;
+    @media (min-width: $tablet) {
+        order: 0;
+        margin-top: 0;
+    }
+}
+
+.inner__descr {
+    color: #9d9d9d;
+    font-size: rem-calc(14);
+    line-height: rem-calc(16);
+    margin: 0 ;
+}
+
+.inner__time {
+    &::after {
+        content: ' ';
+    }
+}
+
+.inner__author {
+    &::before {
+        content: ' ';
+    }
+    a {
+        color: #9d9d9d;
+        text-decoration: underline;
+
+    }
+}
+
+.inner__text {
+    font-size: rem-calc(14);
+    line-height: rem-calc(20);
+    margin: 25px 0;
+}

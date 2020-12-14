@@ -12,10 +12,10 @@ html(lang="ru")
     body
         include ./../layouts/_svg.pug
         //-include ./../sections/cookie/_cookie
-        include ./../sections/header/_header.pug
+        include ../sections/components/header/_header.pug
         block content
-        include ./../sections/footer/_footer.pug
-        button(type="button" onclick='window.scrollTo(0, 0)').to-up
+        include ../sections/components/footer/_footer.pug
+        button(type="button" onclick='window.scrollTo(0, 0)' aria-label='Кнопка Наверх').to-up
             svg(width="51" height="51")
                 use(href="#arrow" fill="#FFFFFF")
 
