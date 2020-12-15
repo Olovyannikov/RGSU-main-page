@@ -2,76 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="20fd1486-6c97-43ed-b28d-aee36dd51278" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/build/img/icons/calendar.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/img/icons/search.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/img/icons/truechevron.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/img/image4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/img/image4.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/img/main.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/inner.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/news.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/icons/calendar.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/icons/search.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/icons/truechevron.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/image4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/main.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pug/pages/index.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pug/pages/inner.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pug/pages/news.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pug/sections/_index.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pug/sections/_inner.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pug/sections/_news.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pug/sections/actually/_actually.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pug/sections/components/breadcrumbs/_breadcrumbs.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pug/sections/events/_events.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pug/sections/hero/_hero.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scss/blocks/actually/_actually.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scss/blocks/events/_events.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scss/blocks/hero/_hero.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scss/blocks/inner/_inner.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scss/blocks/main/_main.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/events.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pug/pages/events.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pug/sections/_events.pug" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/components.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/components.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/css/style.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/css/style.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/gallery-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/gallery-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/gallery-1.webp" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/gallery-1.webp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/main.webp" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/main.webp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/img/gallery-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/gallery-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pug/layouts/_main.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/pug/layouts/_main.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pug/pages/components.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/pug/pages/components.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pug/sections/accordion/_accordion.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/pug/sections/components/accordion/_accordion.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pug/sections/announcement/_announcement.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/pug/sections/components/announcement/_announcement.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pug/sections/buttons/_buttons.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/pug/sections/components/buttons/_buttons.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pug/sections/checkboxes/_checkboxes.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/pug/sections/components/checkboxes/_checkboxes.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pug/sections/face-list/_face-list.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/pug/sections/components/face-list/_face-list.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pug/sections/faq_links/_faq_links.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/pug/sections/components/faq_links/_faq_links.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pug/sections/fast-links/_fast-links.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/pug/sections/components/fast-links/_fast-links.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pug/sections/footer/_footer.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/pug/sections/components/footer/_footer.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pug/sections/forms/_forms.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/pug/sections/components/forms/_forms.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pug/sections/gallery/_gallery.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/pug/sections/components/gallery/_gallery.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pug/sections/header/_header.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/pug/sections/components/header/_header.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pug/sections/hotels/_hotels.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/pug/sections/components/hotels/_hotels.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pug/sections/images/_images.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/pug/sections/components/images/_images.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pug/sections/links/_links.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/pug/sections/components/links/_links.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pug/sections/main/_main.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/pug/sections/components/main/_main.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pug/sections/news-block/_news-block.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/pug/sections/components/news-block/_news-block.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pug/sections/rubricator/_rubricator.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/pug/sections/components/rubricator/_rubricator.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pug/sections/slider/_slider.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/pug/sections/components/slider/_slider.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pug/sections/table/_table.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/pug/sections/components/table/_table.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pug/sections/tabs/_tabs.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/pug/sections/components/tabs/_tabs.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pug/sections/text-content/_text-content.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/pug/sections/components/text-content/_text-content.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pug/sections/titles/_titles.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/pug/sections/components/titles/_titles.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/blocks/fast-links/_fast-links.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/blocks/fast-links/_fast-links.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/blocks/header/_breadcrumbs.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/blocks/header/_breadcrumbs.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/blocks/header/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/blocks/header/_header.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/blocks/header/_menu.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/blocks/header/_menu.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/blocks/header/_navigation.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/blocks/header/_navigation.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/img/icons/icons.svg" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/icons/icons.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/inner.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/inner.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/news.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/news.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/debug.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pug/layouts/_svg.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/pug/layouts/_svg.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pug/sections/_news.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/pug/sections/_news.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/blocks/events/_events.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/blocks/events/_events.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/blocks/news-block/_news-block.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/blocks/news-block/_news-block.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/general/mixes.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/general/mixes.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/general/scaffolding.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/general/scaffolding.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/style.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,7 +85,8 @@
       <workItem from="1607606057975" duration="321000" />
       <workItem from="1607667262425" duration="19671000" />
       <workItem from="1607926284423" duration="11002000" />
-      <workItem from="1607943083016" duration="3902000" />
+      <workItem from="1607943083016" duration="3938000" />
+      <workItem from="1608013054041" duration="2079000" />
     </task>
     <servers />
   </component>

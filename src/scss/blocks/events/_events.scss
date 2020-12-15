@@ -1,5 +1,9 @@
 .events {
     padding-bottom: 30px;
+    margin-top: 26px;
+    @media (min-width: $tablet) {
+        margin-top: 0;
+    }
 }
 
 .events__container {

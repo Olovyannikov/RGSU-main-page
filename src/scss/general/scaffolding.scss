@@ -194,11 +194,14 @@ select {
     border-radius: 2.5px;
     cursor: pointer;
     transition: .2s;
-    background: url("../img/icons/truechevron.svg") 95% center/11px no-repeat;
+    background: url("../img/icons/truechevron.svg") 98% center/11px no-repeat;
     &:focus,
     &:hover {
         border-color: $c-grey-300;
         outline: none;
+    }
+    @media (min-width: $tablet) {
+        background-position: 95%;
     }
 }
 

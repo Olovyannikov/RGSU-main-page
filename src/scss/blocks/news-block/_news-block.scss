@@ -19,6 +19,9 @@
 
 .news__select {
     width: 100%;
+    @media (min-width: $tablet) {
+        max-width: 384px;
+    }
 }
 
 .news__date {
@@ -36,7 +39,8 @@
         display: block;
         left: 50%;
         top: 50%;
-        fill: #485667;
+        stroke: #485667;
+        fill: $c-white-0;
         transform: translate(-50%, -50%);
     }
 }
@@ -56,7 +60,8 @@
         display: block;
         left: 50%;
         top: 50%;
-        fill: #485667;
+        stroke: #485667;
+        fill: $c-white-0;
         transform: translate(-50%, -50%);
     }
 }

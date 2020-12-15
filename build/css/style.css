@@ -672,7 +672,7 @@ select {
   -webkit-transition: .2s;
   -o-transition: .2s;
   transition: .2s;
-  background: url("../img/icons/truechevron.svg") 95% center/11px no-repeat;
+  background: url("../img/icons/truechevron.svg") 98% center/11px no-repeat;
 }
 
 select:focus,
@@ -1810,7 +1810,8 @@ button.swiper-pagination-bullet {
   display: block;
   left: 50%;
   top: 50%;
-  fill: #485667;
+  stroke: #485667;
+  fill: #FFFFFF;
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -1843,7 +1844,8 @@ button.swiper-pagination-bullet {
   display: block;
   left: 50%;
   top: 50%;
-  fill: #485667;
+  stroke: #485667;
+  fill: #FFFFFF;
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -2912,6 +2914,7 @@ button.swiper-pagination-bullet {
 
 .events {
   padding-bottom: 30px;
+  margin-top: 26px;
 }
 
 .events__wrapper {
@@ -3052,6 +3055,10 @@ button.swiper-pagination-bullet {
 @media (min-width: 1024px) {
   .container {
     padding: 0 220px;
+  }
+
+  select {
+    background-position: 95%;
   }
 
   .to-up {
@@ -3404,6 +3411,10 @@ button.swiper-pagination-bullet {
     padding-bottom: 25px;
   }
 
+  .news__select {
+    max-width: 384px;
+  }
+
   .news-block {
     margin-bottom: 34px;
   }
@@ -3681,6 +3692,10 @@ button.swiper-pagination-bullet {
     line-height: 2.625rem;
     top: 26px;
     left: 26px;
+  }
+
+  .events {
+    margin-top: 0;
   }
 
   .events__container {
