@@ -1,6 +1,8 @@
 .social {
-    display: flex;
-
+    display: none;
+    @media (min-width: 1438px) {
+        display: flex;
+    }
 }
 
 .social__block {
