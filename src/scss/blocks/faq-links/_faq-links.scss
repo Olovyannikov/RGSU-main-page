@@ -13,8 +13,8 @@
     display: block;
     position: relative;
     margin-bottom: 12px;
-    font-size: rem-calc(14);
-    line-height: rem-calc(16);
+    font-size: rem-calc(16);
+    line-height: rem-calc(18);
     max-width: 274px;
     &::before {
         content: "";
@@ -61,8 +61,8 @@
     @media (min-width: $tablet) {
         margin-bottom: 22px;
         &::before {
-        width: 30px;
-        height: 40px;
+            width: 30px;
+            height: 40px;
         }
     }
 }

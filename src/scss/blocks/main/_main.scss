@@ -1,6 +1,7 @@
 .main__hero {
     position: relative;
     margin-bottom: 34px;
+    min-height: calc(100vh - 129px);
     img {
         width: 100%;
         height: calc(100vh - 129px);

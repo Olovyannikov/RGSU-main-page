@@ -1,6 +1,12 @@
 .footer {
     background: $c-blue-500;
     padding-top: 40px;
+    hr {
+        display: none;
+        @media (min-width: $tablet) {
+            display: block;
+        }
+    }
 }
 
 .footer__container {
@@ -43,8 +49,8 @@
     padding-bottom: 26px;
     a {
         color: rgba($c-white-0, 0.7);
-        font-size: rem-calc(12);
-        line-height: rem-calc(17);
+        font-size: rem-calc(16);
+        line-height: rem-calc(20);
         span {
             color: $c-white-0;
         }
@@ -55,7 +61,7 @@
     @media (min-width: $tablet) {
         a {
             font-size: rem-calc(14);
-            line-height: rem-calc(26);
+            line-height: rem-calc(18);
         }
     }
 }
@@ -66,10 +72,11 @@
 }
 
 .footer__list--contacts {
+    padding-bottom: 0;
     @media (min-width: $tablet) {
         a {
-            font-size: rem-calc(12);
-            line-height: rem-calc(17);
+            font-size: rem-calc(14);
+            line-height: rem-calc(18);
         }
     }
 }
@@ -85,7 +92,7 @@
     hr {
         margin: 0;
         opacity: 0.15;
-        border: 1px solid #FFFFFF;
+        border: 1px solid #ffffff;
         @media (min-width: $tablet) {
             display: none;
         }

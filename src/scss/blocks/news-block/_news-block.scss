@@ -35,7 +35,7 @@
     padding: 11px 13px 14px 13px;
     svg {
         position: absolute;
-        content: '';
+        content: "";
         display: block;
         left: 50%;
         top: 50%;
@@ -56,7 +56,7 @@
     padding: 11px 13px 14px 13px;
     svg {
         position: absolute;
-        content: '';
+        content: "";
         display: block;
         left: 50%;
         top: 50%;
@@ -99,8 +99,8 @@
     color: $c-grey-300;
 }
 .news-block__link {
-    font-size: rem-calc(14);
-    line-height: rem-calc(16);
+    font-size: rem-calc(18);
+    line-height: rem-calc(20);
     color: $c-blue-300;
     font-weight: 600;
     display: block;

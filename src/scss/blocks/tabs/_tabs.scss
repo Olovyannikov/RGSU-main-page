@@ -113,6 +113,31 @@
                 border-right: 1px solid $c-grey-200;
             }
 
+            &:first-child {
+                &:hover {
+                    background: $c-blue-200;
+                    color: $c-white-0;
+                }
+            }
+            &:nth-child(2) {
+                &:hover {
+                    background: $c-blue-500;
+                    color: $c-white-0;
+                }
+            }
+            &:nth-child(3) {
+                &:hover {
+                    background: $c-purple-200;
+                    color: $c-white-0;
+                }
+            }
+            &:nth-child(4) {
+                &:hover {
+                    background: $c-green-200;
+                    color: $c-white-0;
+                }
+            }
+
             &.tabs-active {
                 background: $c-blue-200;
                 color: $c-white-0;
@@ -268,7 +293,6 @@
 .tabs__radio-input:disabled + .tabs__radio-button + .tabs__radio-text {
     color: $c-grey-200;
 }
-
 
 @media (min-width: $tablet) {
     .tabs-item__container {

@@ -4,7 +4,7 @@
         border-bottom: 1px solid $c-grey-200;
     }
     .accordion-title {
-        font-size: rem-calc(14);
+        font-size: rem-calc(18);
         line-height: rem-calc(16);
         color: #485667;
         font-weight: bold;
@@ -92,7 +92,7 @@
         transition: opacity 200ms linear, max-height 200ms linear;
         will-change: opacity, max-height;
         p {
-            font-size: rem-calc(14);
+            font-size: rem-calc(16);
             line-height: rem-calc(20);
             font-weight: 300;
             margin: 0;
