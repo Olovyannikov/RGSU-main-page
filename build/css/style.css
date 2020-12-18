@@ -1594,6 +1594,7 @@ header .social {
 .footer__list-item {
   width: 171px;
   margin-bottom: 10px;
+  color: #FFFFFF;
 }
 
 .footer__list--contacts {
@@ -3423,18 +3424,12 @@ header .social {
     line-height: 1.125rem;
   }
 
-  .footer__list-item a {
-    -webkit-transition: 0.5s;
-    -o-transition: 0.5s;
-    transition: 0.5s;
-  }
-
   .footer__list-item a:hover {
-    padding-bottom: 5px;
-    border-bottom: 1px solid #FFFFFF;
+    text-decoration: underline;
   }
 
   .footer__list--contacts a {
+    display: block;
     font-size: 0.875rem;
     line-height: 1.125rem;
   }
