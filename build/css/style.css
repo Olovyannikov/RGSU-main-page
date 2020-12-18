@@ -1385,9 +1385,9 @@ button.swiper-pagination-bullet {
 }
 
 .dropdown__item {
-  -webkit-transition: .2s;
-  -o-transition: .2s;
-  transition: .2s;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
   padding: 10px 20px;
 }
 
@@ -3243,7 +3243,7 @@ header .social {
         -ms-flex-order: 0;
             order: 0;
     background: #022438;
-    width: 98px;
+    width: 51px;
     height: 42px;
     font-size: 0.875rem;
     line-height: 1rem;
@@ -3273,10 +3273,8 @@ header .social {
   }
 
   .menu-opened .header__menu-button {
-    -webkit-box-ordinal-group: 4;
-        -ms-flex-order: 3;
-            order: 3;
-    font-size: 0;
+    position: absolute;
+    right: 70px;
   }
 
   .menu-opened .header__menu-button::before {
@@ -3373,6 +3371,7 @@ header .social {
 
   .dropdown {
     display: block;
+    min-width: 110px;
   }
 
   .menu {

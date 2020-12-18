@@ -70,8 +70,7 @@
         padding-bottom: 0;
         color: #000;
         cursor: auto;
-        background: $c-grey-200 url("../img/icons/loupe-dark.svg") no-repeat 90%
-            center;
+        background: $c-grey-200 url("../img/icons/loupe-dark.svg") no-repeat 90% center;
         background-size: 15px;
     }
     @media (min-width: $tablet) {
@@ -83,16 +82,14 @@
         box-sizing: border-box;
         border-radius: 0;
         padding-left: 0;
-        background: $c-white-0 url("../img/icons/loupe-dark.svg") no-repeat 75px
-            center;
+        background: $c-white-0 url("../img/icons/loupe-dark.svg") no-repeat 75px center;
         &:focus {
             padding-top: 10px;
             height: 42px;
             width: 220px;
             padding-bottom: 10px;
             box-sizing: border-box;
-            background: $c-grey-200 url("../img/icons/loupe.svg") no-repeat 185px
-                center;
+            background: $c-grey-200 url("../img/icons/loupe.svg") no-repeat 185px center;
             background-size: 15px;
             &::placeholder {
                 color: transparent;
@@ -155,7 +152,7 @@
     @media (min-width: $tablet) {
         order: 0;
         background: $c-blue-600;
-        width: 98px;
+        width: 51px;
         height: 42px;
         font-size: rem-calc(14);
         line-height: rem-calc(16);
@@ -178,8 +175,8 @@
             box-shadow: 0 18px 0 $c-white-0;
         }
         .menu-opened & {
-            order: 3;
-            font-size: 0;
+            position: absolute;
+            right: 70px;
             &::before {
                 transform: rotate(45deg);
                 top: 9px;

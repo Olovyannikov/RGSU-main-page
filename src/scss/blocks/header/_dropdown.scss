@@ -2,6 +2,7 @@
     display: none;
     @media (min-width: $tablet) {
         display: block;
+        min-width: 110px;
     }
 }
 
@@ -20,7 +21,7 @@
 }
 
 .dropdown__item {
-    transition: .2s;
+    transition: 0.2s;
     padding: 10px 20px;
     &:hover {
         background: $c-blue-400;
