@@ -1,5 +1,4 @@
 .hero__container {
-
 }
 
 .hero__title {
@@ -32,9 +31,15 @@
     bottom: 54px;
     font-size: rem-calc(16);
     line-height: rem-calc(19);
-    color: #337AB7;
+    color: $c-blue-300;
     padding: 10px 26px;
     background: $c-white-0;
     border-radius: 2.5px;
-    font-weight: bold;
+    font-weight: 500;
+    transition: 0.2s;
+    box-shadow: inset 1px 1px $c-blue-300;
+    &:hover {
+        background: $c-blue-300;
+        color: $c-white-0;
+    }
 }

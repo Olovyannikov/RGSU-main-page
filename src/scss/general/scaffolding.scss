@@ -173,7 +173,8 @@ input:not([type="range"]) {
             border-color: $c-red-0;
         }
     }
-    &[type="email"]:focus, &[type="email"]:hover {
+    &[type="email"]:focus,
+    &[type="email"]:hover {
         border-color: $c-blue-200;
     }
 }
@@ -193,7 +194,7 @@ select {
     box-sizing: border-box;
     border-radius: 2.5px;
     cursor: pointer;
-    transition: .2s;
+    transition: 0.2s;
     background: url("../img/icons/truechevron.svg") 98% center/11px no-repeat;
     &:focus,
     &:hover {
@@ -234,8 +235,8 @@ textarea {
         @include btn-reset;
         display: block;
         position: fixed;
-        width: 90px;
-        height: 90px;
+        width: 63px;
+        height: 63px;
         bottom: 20px;
         right: 20px;
         border-radius: 50%;

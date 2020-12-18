@@ -31,6 +31,8 @@
     @media (min-width: $tablet) {
         order: 1;
         margin-left: auto;
+        position: relative;
+        left: 75px;
         svg {
             fill: $c-blue-600;
             width: 149px;

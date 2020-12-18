@@ -33,18 +33,21 @@
     background: $c-blue-300;
     border-radius: 2.5px;
     border: 1px solid transparent;
-    transition: .5s;
+    transition: 0.5s;
     @media (min-width: $tablet) {
-        max-width: 166px;
+        max-width: 120px;
+
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
     &:hover {
         background: $c-white-0;
         color: $c-blue-300;
-        border: 1px solid $c-blue-300
+        border: 1px solid $c-blue-300;
     }
     &:disabled {
         background: $c-grey-200;
-        color: #D3DAE4;
+        color: #d3dae4;
         &:hover {
             border: 1px solid transparent;
         }

@@ -6,6 +6,10 @@
     position: relative;
 }
 
+.actually__title {
+    margin-bottom: 30px;
+}
+
 .actually__descr {
     display: none;
     width: 708px;
@@ -18,7 +22,7 @@
         width: 543px;
         position: relative;
         &::after {
-            content: '';
+            content: "";
             display: block;
             position: absolute;
             width: 54px;
@@ -28,7 +32,7 @@
             top: 50%;
         }
         &::before {
-            content: '';
+            content: "";
             position: absolute;
             width: 12px;
             height: 12px;
@@ -40,7 +44,7 @@
     }
     @media (min-width: $tablet) {
         display: block;
-        background: #00314F;
+        background: #00314f;
         color: $c-white-0;
         font-size: rem-calc(18);
         line-height: rem-calc(21);

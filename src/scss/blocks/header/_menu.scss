@@ -30,6 +30,7 @@
     &::after {
         position: absolute;
         content: "|";
+        color: #bac6d4;
         right: -1.9%;
         top: 50%;
         transform: translateY(-50%);
@@ -41,7 +42,7 @@
     }
     &--last-child {
         &:after {
-            content: '';
+            content: "";
         }
     }
 }

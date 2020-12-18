@@ -669,9 +669,9 @@ select {
           box-sizing: border-box;
   border-radius: 2.5px;
   cursor: pointer;
-  -webkit-transition: .2s;
-  -o-transition: .2s;
-  transition: .2s;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
   background: url("../img/icons/truechevron.svg") 98% center/11px no-repeat;
 }
 
@@ -1020,9 +1020,9 @@ button.swiper-pagination-bullet {
   background: #337AB7;
   border-radius: 2.5px;
   border: 1px solid transparent;
-  -webkit-transition: .5s;
-  -o-transition: .5s;
-  transition: .5s;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .btn:focus {
@@ -1037,7 +1037,7 @@ button.swiper-pagination-bullet {
 
 .btn:disabled {
   background: #BFCAD8;
-  color: #D3DAE4;
+  color: #d3dae4;
 }
 
 .btn:disabled:hover {
@@ -1439,6 +1439,7 @@ button.swiper-pagination-bullet {
 .menu__item::after {
   position: absolute;
   content: "|";
+  color: #bac6d4;
   right: -1.9%;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -1451,7 +1452,7 @@ button.swiper-pagination-bullet {
 }
 
 .menu__item--last-child:after {
-  content: '';
+  content: "";
 }
 
 header .social {
@@ -2885,7 +2886,7 @@ header .social {
 
 .main__hero {
   position: relative;
-  margin-bottom: 34px;
+  margin-bottom: 40px;
   min-height: calc(100vh - 129px);
 }
 
@@ -2932,7 +2933,17 @@ header .social {
   padding: 10px 26px;
   background: #FFFFFF;
   border-radius: 2.5px;
-  font-weight: bold;
+  font-weight: 500;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+  -webkit-box-shadow: inset 1px 1px #337AB7;
+          box-shadow: inset 1px 1px #337AB7;
+}
+
+.hero__more:hover {
+  background: #337AB7;
+  color: #FFFFFF;
 }
 
 .events {
@@ -2954,7 +2965,7 @@ header .social {
 }
 
 .events__item {
-  border-bottom: 1px solid #E3E3E3;
+  border-bottom: 1px solid #e3e3e3;
   margin-bottom: 16px;
 }
 
@@ -2970,12 +2981,20 @@ header .social {
   margin-bottom: 16px;
 }
 
+.events__title {
+  margin-bottom: 30px;
+}
+
 .actually {
   margin-bottom: 50px;
 }
 
 .actually__container {
   position: relative;
+}
+
+.actually__title {
+  margin-bottom: 30px;
 }
 
 .actually__descr {
@@ -2994,7 +3013,7 @@ header .social {
 }
 
 .actually__descr span::after {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   width: 54px;
@@ -3005,7 +3024,7 @@ header .social {
 }
 
 .actually__descr span::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 12px;
   height: 12px;
@@ -3093,8 +3112,8 @@ header .social {
     outline: none;
     display: block;
     position: fixed;
-    width: 90px;
-    height: 90px;
+    width: 63px;
+    height: 63px;
     bottom: 20px;
     right: 20px;
     border-radius: 50%;
@@ -3137,7 +3156,9 @@ header .social {
   }
 
   .btn {
-    max-width: 166px;
+    max-width: 120px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 
   .header {
@@ -3154,6 +3175,8 @@ header .social {
         -ms-flex-order: 1;
             order: 1;
     margin-left: auto;
+    position: relative;
+    left: 75px;
   }
 
   .header__logo svg {
@@ -3400,6 +3423,17 @@ header .social {
     line-height: 1.125rem;
   }
 
+  .footer__list-item a {
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+  }
+
+  .footer__list-item a:hover {
+    padding-bottom: 5px;
+    border-bottom: 1px solid #FFFFFF;
+  }
+
   .footer__list--contacts a {
     font-size: 0.875rem;
     line-height: 1.125rem;
@@ -3509,22 +3543,26 @@ header .social {
     border-right: 1px solid #BFCAD8;
   }
 
-  .tabs-tabs .tabs-tab:first-child:hover {
+  .tabs-tabs .tabs-tab:first-child:hover,
+  .tabs-tabs .tabs-tab:first-child:focus {
     background: #3888C3;
     color: #FFFFFF;
   }
 
-  .tabs-tabs .tabs-tab:nth-child(2):hover {
+  .tabs-tabs .tabs-tab:nth-child(2):hover,
+  .tabs-tabs .tabs-tab:nth-child(2):focus {
     background: #00314F;
     color: #FFFFFF;
   }
 
-  .tabs-tabs .tabs-tab:nth-child(3):hover {
+  .tabs-tabs .tabs-tab:nth-child(3):hover,
+  .tabs-tabs .tabs-tab:nth-child(3):focus {
     background: #5B6BC8;
     color: #FFFFFF;
   }
 
-  .tabs-tabs .tabs-tab:nth-child(4):hover {
+  .tabs-tabs .tabs-tab:nth-child(4):hover,
+  .tabs-tabs .tabs-tab:nth-child(4):focus {
     background: #07766D;
     color: #FFFFFF;
   }
@@ -3757,7 +3795,7 @@ header .social {
 
   .actually__descr {
     display: block;
-    background: #00314F;
+    background: #00314f;
     color: #FFFFFF;
     font-size: 1.125rem;
     line-height: 1.3125rem;

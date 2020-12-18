@@ -69,6 +69,15 @@
 .footer__list-item {
     width: 171px;
     margin-bottom: 10px;
+    @media (min-width: $tablet) {
+        a {
+            transition: 0.5s;
+            &:hover {
+                padding-bottom: 5px;
+                border-bottom: 1px solid $c-white-0;
+            }
+        }
+    }
 }
 
 .footer__list--contacts {
