@@ -3424,6 +3424,11 @@ header .social {
     line-height: 1.125rem;
   }
 
+  .footer__list-item span {
+    margin-bottom: 10px;
+    display: block;
+  }
+
   .footer__list-item a:hover {
     text-decoration: underline;
   }

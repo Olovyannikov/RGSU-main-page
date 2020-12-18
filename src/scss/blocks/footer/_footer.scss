@@ -71,6 +71,10 @@
     margin-bottom: 10px;
     color: $c-white-0;
     @media (min-width: $tablet) {
+        span {
+            margin-bottom: 10px;
+            display: block;
+        }
         a {
             &:hover {
                 text-decoration: underline;
