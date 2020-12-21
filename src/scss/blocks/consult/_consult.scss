@@ -1,0 +1,49 @@
+.consult {
+    padding-top: 46px;
+    background: #f2f4f8;
+    padding-bottom: 58px;
+    @media (min-width: $tablet) {
+        padding-bottom: 40px;
+        padding-top: 24px;
+    }
+}
+
+.consult__form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.consult__name {
+    width: 240px;
+    margin-bottom: 15px;
+}
+
+.consult__mail#mail {
+    width: 240px;
+    padding-top: 9px;
+    margin-bottom: 15px;
+}
+
+.consult__input {
+    width: 240px;
+    margin-bottom: 15px;
+    padding: 9px 13px;
+}
+
+.consult__select {
+    width: 240px;
+    margin-bottom: 15px;
+    color: $c-black-0;
+    background-color: #fff;
+}
+// .consult__btn {
+//     @include btn-reset;
+//     width: 55px;
+//     height: 55px;
+// }
+
+.consult__submit {
+    min-width: 166px;
+    height: 52px;
+}

@@ -9,18 +9,22 @@ main.main
             form.consult__form
                 input(type="text" id="name" placeholder="Имя").consult__name
                 input(type="email" id="mail" placeholder="Электронная почта").consult__mail
-                input(type="tel" id="tel").consult__input        
+                input(type="tel" id="tel" placeholder="Телефон").consult__input        
                 select.consult__select
                     option(disabled=true selected=true) Уровень образования
                     option(value="0") Ноль без палочки
                     option(value="1") Бэтмен
                     option(value="2") Владыка ситхов
-                button.consult__btn
-                    svg(width="14" height="14")
-                        use(href="#chev")
-                button.consult__btn
-                    svg(width="14" height="14")
-                        use(href="#chev")
+                label(for="checkOne").checkbox__label.consult__checkbox Нажимая на кнопку, вы даете согласие на обработку своих  <a href="#"> персональных данных</a>
+                    input(type='checkbox' id="checkOne").checkbox__input
+                    span.checkbox__appearance
+                button(type="submit").consult__submit.btn Отправить    
+                //- button.consult__btn
+                //-     svg(width="13" height="13")
+                //-         use(href="#vector")
+                //- button.consult__btn
+                //-     svg(width="13" height="13")
+                //-         use(href="#vector")
 
     section.contacts
         .contacts__container.container

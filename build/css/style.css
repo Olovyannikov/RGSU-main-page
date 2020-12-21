@@ -2975,6 +2975,10 @@ header .social {
   z-index: 1;
 }
 
+.abiturients .hero__container {
+  height: calc(100vh - 220px);
+}
+
 .abiturients .hero__more {
   z-index: 6;
   bottom: 28px;
@@ -3167,6 +3171,52 @@ header .social {
 
 .contacts__tel-link {
   color: #485667;
+}
+
+.consult {
+  padding-top: 46px;
+  background: #f2f4f8;
+  padding-bottom: 58px;
+}
+
+.consult__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.consult__name {
+  width: 240px;
+  margin-bottom: 15px;
+}
+
+.consult__mail#mail {
+  width: 240px;
+  padding-top: 9px;
+  margin-bottom: 15px;
+}
+
+.consult__input {
+  width: 240px;
+  margin-bottom: 15px;
+  padding: 9px 13px;
+}
+
+.consult__select {
+  width: 240px;
+  margin-bottom: 15px;
+  color: #485667;
+  background-color: #fff;
+}
+
+.consult__submit {
+  min-width: 166px;
+  height: 52px;
 }
 
 @media (min-width: 768px) {
@@ -3925,6 +3975,11 @@ header .social {
   .contacts {
     padding-top: 70px;
     padding-bottom: 35px;
+  }
+
+  .consult {
+    padding-bottom: 40px;
+    padding-top: 24px;
   }
 }
 

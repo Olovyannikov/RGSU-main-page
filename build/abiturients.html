@@ -109,23 +109,17 @@
           <form class="consult__form">
             <input class="consult__name" type="text" id="name" placeholder="Имя"/>
             <input class="consult__mail" type="email" id="mail" placeholder="Электронная почта"/>
-            <input class="consult__input" type="tel" id="tel"/>
+            <input class="consult__input" type="tel" id="tel" placeholder="Телефон"/>
             <select class="consult__select">
               <option disabled="disabled" selected="selected">Уровень образования</option>
               <option value="0">Ноль без палочки</option>
               <option value="1">Бэтмен</option>
               <option value="2">Владыка ситхов</option>
             </select>
-            <button class="consult__btn">
-              <svg width="14" height="14">
-                <use href="#chev"></use>
-              </svg>
-            </button>
-            <button class="consult__btn">
-              <svg width="14" height="14">
-                <use href="#chev"></use>
-              </svg>
-            </button>
+            <label class="checkbox__label consult__checkbox" for="checkOne">Нажимая на кнопку, вы даете согласие на обработку своих  <a href="#"> персональных данных</a>
+              <input class="checkbox__input" type="checkbox" id="checkOne"/><span class="checkbox__appearance"></span>
+            </label>
+            <button class="consult__submit btn" type="submit">Отправить    </button>
           </form>
         </div>
       </section>
