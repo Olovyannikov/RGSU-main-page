@@ -1195,7 +1195,7 @@ button.swiper-pagination-bullet {
 }
 
 .header__navigation {
-  position: fixed;
+  position: absolute;
   z-index: 3;
   background: #022438;
   width: 100%;
@@ -1317,6 +1317,9 @@ button.swiper-pagination-bullet {
   font-weight: 700;
   position: relative;
   display: block;
+}
+
+.navigation__item a.navigation__link--hasSubmenu {
   pointer-events: none;
 }
 
@@ -2925,6 +2928,26 @@ header .social {
   background: #FFFFFF;
 }
 
+.hero__image {
+  position: relative;
+  height: calc(100vh - (129px + 291px));
+  overflow: hidden;
+}
+
+.hero__image::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 49, 79, 0.25);
+  display: block;
+  width: 100%;
+  height: 100vh;
+  z-index: 5;
+}
+
 .hero__more {
   position: absolute;
   bottom: 54px;
@@ -2945,6 +2968,49 @@ header .social {
 .hero__more:hover {
   background: #337AB7;
   color: #FFFFFF;
+}
+
+.abiturients {
+  position: relative;
+  z-index: 1;
+}
+
+.abiturients .hero__more {
+  z-index: 6;
+  bottom: 28px;
+  background: #3888C3;
+  color: #FFFFFF;
+  width: calc(100% - 3.5rem);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 55px;
+  bottom: 26px;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.abiturients .hero__descr {
+  top: 77px;
+  z-index: 6;
+  margin: 0;
+  position: relative;
+  font-size: 2.25rem;
+  line-height: 2.625rem;
+  padding: 0;
+  display: block;
+  bottom: unset;
+  font-weight: bold;
+  color: #fff;
+  background: unset;
+  margin: 0 auto;
 }
 
 .events {
@@ -3080,6 +3146,29 @@ header .social {
   margin: 25px 0;
 }
 
+.contacts {
+  padding-bottom: 50px;
+  padding-top: 40px;
+}
+
+.contacts__address {
+  font-weight: bold;
+  font-style: normal;
+  margin: 0;
+  font-size: 0.875rem;
+  line-height: 1.1875rem;
+}
+
+.contacts__descr {
+  display: block;
+  font-size: rem(14);
+  line-height: 1.1875rem;
+}
+
+.contacts__tel-link {
+  color: #485667;
+}
+
 @media (min-width: 768px) {
   .container {
     padding: 0 110px;
@@ -3092,6 +3181,10 @@ header .social {
 
   .face-list__item {
     max-width: 325px;
+  }
+
+  .abiturients .hero__more {
+    width: calc(100% - 13.75rem);
   }
 }
 
@@ -3297,7 +3390,7 @@ header .social {
   }
 
   .menu-opened .header__menu-button {
-    position: absolute;
+    position: fixed;
     right: 70px;
   }
 
@@ -3379,6 +3472,10 @@ header .social {
     -webkit-transform: translateX(0);
         -ms-transform: translateX(0);
             transform: translateX(0);
+  }
+
+  .navigation__item a.navigation__link--hasSubmenu {
+    pointer-events: unset;
   }
 
   .navigation__item a::after {
@@ -3778,6 +3875,22 @@ header .social {
     left: 26px;
   }
 
+  .hero__image {
+    height: calc(100vh - (129px + 220px));
+  }
+
+  .abiturients .hero__more {
+    width: 259px;
+    bottom: 52px;
+  }
+
+  .abiturients .hero__descr {
+    font-size: 3.75rem;
+    line-height: 4.375rem;
+    text-transform: uppercase;
+    top: 221px;
+  }
+
   .events {
     margin-top: 0;
   }
@@ -3807,6 +3920,11 @@ header .social {
         -ms-flex-order: 0;
             order: 0;
     margin-top: 0;
+  }
+
+  .contacts {
+    padding-top: 70px;
+    padding-bottom: 35px;
   }
 }
 

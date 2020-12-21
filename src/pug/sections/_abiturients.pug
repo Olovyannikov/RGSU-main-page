@@ -1,0 +1,36 @@
+main.main
+    section.abiturients.hero__image(style="background: url('img/slider-0.png') no-repeat center 100%/cover;")
+        .hero__container.container
+            p(href="#").hero__descr Первый социальный вуз страны
+            a(href="#").hero__more Получить консультацию
+    section.consult
+        .consult__container.container
+            h2.consult__title.title.title--block Получить консультацию
+            form.consult__form
+                input(type="text" id="name" placeholder="Имя").consult__name
+                input(type="email" id="mail" placeholder="Электронная почта").consult__mail
+                input(type="tel" id="tel").consult__input        
+                select.consult__select
+                    option(disabled=true selected=true) Уровень образования
+                    option(value="0") Ноль без палочки
+                    option(value="1") Бэтмен
+                    option(value="2") Владыка ситхов
+                button.consult__btn
+                    svg(width="14" height="14")
+                        use(href="#chev")
+                button.consult__btn
+                    svg(width="14" height="14")
+                        use(href="#chev")
+
+    section.contacts
+        .contacts__container.container
+            h2.contacts__title.title.title--block Контакты приемной комисии
+            address.contacts__address Адрес: г. Москва, ул. Вильгельма Пика, д. 4, стр. 8
+            span.contacts__descr Телефон 
+                a.contacts__tel-link(href="tel:+79000000000") +7(495) 255-67-67
+            span.contacts__descr Чат в telegram-канале: 
+                a(href="#").contacts__link https://t.me/PKRGSU_cha
+            span.contacts__descr Mail: 
+                a(href="#").contacts__link pk@rgsu.net
+            span.contacts__descr Группа в Вконтакте: 
+                a(href="#").contacts__link abiturient_rgsu            

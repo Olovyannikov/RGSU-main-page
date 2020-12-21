@@ -177,7 +177,7 @@
             box-shadow: 0 18px 0 $c-white-0;
         }
         .menu-opened & {
-            position: absolute;
+            position: fixed;
             right: 70px;
             &::before {
                 transform: rotate(45deg);
@@ -194,7 +194,7 @@
 }
 
 .header__navigation {
-    position: fixed;
+    position: absolute;
     z-index: 3;
     background: $c-blue-600;
     width: 100%;

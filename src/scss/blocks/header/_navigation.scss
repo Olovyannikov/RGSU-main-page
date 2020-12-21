@@ -90,7 +90,13 @@
     font-weight: 700;
     position: relative;
     display: block;
+}
+
+.navigation__item a.navigation__link--hasSubmenu {
     pointer-events: none;
+    @media (min-width: $tablet) {
+        pointer-events: unset;
+    }
 }
 
 .navigation__item a::after {

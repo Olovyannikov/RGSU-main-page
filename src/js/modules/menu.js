@@ -57,3 +57,14 @@ export default () => {
         });
     }
 };
+
+document.body.addEventListener('keydown', () => {
+
+    let header = document.querySelector(`.js-header`);
+    if (event.keyCode == 27) {
+
+        header.classList.remove(`header--menu-opened`);
+        document.body.classList.remove(`menu-opened`);
+
+    }
+})
