@@ -1,22 +1,13 @@
 section.slider
     .slider__container.container
-        h2.slider__title.title.title--block Слайдер
+        h2.slider__title.title.title--block.visually-hidden Слайдер
         .swiper-container.slider__block
             .swiper-wrapper.slider__wrapper
-                a(href="#").swiper-slide.slider__item
-                    picture
-                        source(srcset="img/slider-0.webp" type="image/webp")
-                        img(src="img/slider-0.png")
+                a(href="#" style="background: url(img/slider-0.png) center 100%/cover").swiper-slide.slider__item
                     p.slider__descr Центр содействия трудоустройству
-                a(href="#").swiper-slide.slider__item
-                    picture
-                        source(srcset="img/rgsu.webp" type="image/webp")
-                        img(src="img/rgsu.jpg")
+                a(href="#" style="background: url(img/rgsu.jpg) center 100%/cover").swiper-slide.slider__item
                     p.slider__descr Центр содействия
-                a(href="#").swiper-slide.slider__item
-                    picture
-                        source(srcset="img/main.webp" type="image/webp")
-                        img(src="img/main.png")
+                a(href="#" style="background: url(img/main.png) center 100%/cover").swiper-slide.slider__item
                     p.slider__descr Центр трудоустройства
             .swiper-pagination
             .swiper-button-prev.slider__nav.slider__nav--prev

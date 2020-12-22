@@ -1,15 +1,179 @@
 main.main
-    section.abiturients.hero__image(style="background: url('img/slider-0.png') no-repeat center 100%/cover;")
-        .hero__container.container
-            p(href="#").hero__descr Первый социальный вуз страны
-            a(href="#").hero__more Получить консультацию
+    section.hero.abiturients
+        .hero__wrapper(style="background: url(img/slider-0.png) no-repeat 100%/cover").hero-abiturients__wrapper
+            .hero__container.container
+                .hero-abiturients__container
+                    h2.hero__title.hero__abiturients-title Первый социальный вуз страны
+                    a(href="#").hero__more.hero__abiturients-more.btn Получить консультацию
+    section.info
+        .info__container.container
+            .info__wrapper
+                span 1335
+                | бюджетных мест
+            .info__wrapper
+                span 17000
+                | студентов обучается в вузе
+            .info__wrapper
+                span 14
+                | факультетов и колледж
+            .info__wrapper
+                span 80
+                | направлений подготовки
+    include ./components/slider/_slider
+    section.directions-grid
+        .directions-grid__container.container
+            h2.visually-hidden Направления подготовки
+            .directions-grid__wrapper
+                .directions-grid__big
+                    picture
+                        source(srcset="img/chicks-0.webp" type="image/webp")
+                        img(alt="#" src="img/chicks-0.png")
+                    .directions-grid__info.directions-grid__info--big
+                        h3.directions-grid__info-title Бакалавриат
+                        a.directions-grid__info-link(href="#") Направления подготовки
+                        a.directions-grid__info-link(href="#") Направления подготовки
+                        a.directions-grid__info-link(href="#") Направления подготовки
+
+                .directions-grid__cell.directions-grid__cell--1
+                    picture
+                        source(srcset="img/chicks-1.webp" type="image/webp")
+                        img(alt="#" src="img/chicks-1.png")
+                    .directions-grid__info
+                        h3.directions-grid__info-title Бакалавриат
+                        a.directions-grid__info-link(href="#") Направления подготовки
+                        a.directions-grid__info-link(href="#") Направления подготовки
+                        a.directions-grid__info-link(href="#") Направления подготовки
+                .directions-grid__cell.directions-grid__cell--2
+                    picture
+                        source(srcset="img/chicks-2.webp" type="image/webp")
+                        img(alt="#" src="img/chicks-2.png")
+                    .directions-grid__info
+                        h3.directions-grid__info-title Бакалавриат
+                        a.directions-grid__info-link(href="#") Направления подготовки
+                        a.directions-grid__info-link(href="#") Направления подготовки
+                        a.directions-grid__info-link(href="#") Направления подготовки
+                .directions-grid__cell.directions-grid__cell--3
+                    picture
+                        source(srcset="img/chicks-3.webp" type="image/webp")
+                        img(alt="#" src="img/chicks-3.png")
+                    .directions-grid__info
+                        h3.directions-grid__info-title Бакалавриат
+                        a.directions-grid__info-link(href="#") Направления подготовки
+                        a.directions-grid__info-link(href="#") Направления подготовки
+                        a.directions-grid__info-link(href="#") Направления подготовки
+                .directions-grid__cell.directions-grid__cell--4
+                    picture
+                        source(srcset="img/chicks-4.webp" type="image/webp")
+                        img(alt="#" src="img/chicks-4.png")
+                    .directions-grid__info
+                        h3.directions-grid__info-title Бакалавриат
+                        a.directions-grid__info-link(href="#") Направления подготовки
+                        a.directions-grid__info-link(href="#") Направления подготовки
+                        a.directions-grid__info-link(href="#") Направления подготовки
+    section.directions
+        .dirictions__container.container
+            h2.directions__title.title.title--secondary Направления подготовки
+            ul.directions__list
+                li.directions__item
+                    a(href="#")
+                        h4.direction__title Безопасность информационных технологий в правоохранительной сфере
+                        .direction__info
+                            .direction__info-wrapper
+                                p.direction__number 410 000
+                                span Стоимость в руб. на 2020
+                            .direction__info-wrapper
+                                p.direction__number 4 года
+                                span Срок обучения
+                            .direction__info-wrapper
+                                p.direction__number 30/30
+                                span Бюджетных/контрактных мест
+                            .direction__info-wrapper
+                                p.direction__number 30/30
+                                span Бюджетных/контрактных мест
+                        hr
+                        p.direction__id 54.03.01
+                li.directions__item
+                    a(href="#")
+                        h4.direction__title Безопасность информационных технологий в правоохранительной сфере
+                        .direction__info
+                            .direction__info-wrapper
+                                p.direction__number 410 000
+                                span Стоимость в руб. на 2020
+                            .direction__info-wrapper
+                                p.direction__number 4 года
+                                span Срок обучения
+                            .direction__info-wrapper
+                                p.direction__number 30/30
+                                span Бюджетных/контрактных мест
+                            .direction__info-wrapper
+                                p.direction__number 30/30
+                                span Бюджетных/контрактных мест
+                        hr
+                        p.direction__id 54.03.01
+                li.directions__item
+                    a(href="#")
+                        h4.direction__title Безопасность информационных технологий в правоохранительной сфере
+                        .direction__info
+                            .direction__info-wrapper
+                                p.direction__number 410 000
+                                span Стоимость в руб. на 2020
+                            .direction__info-wrapper
+                                p.direction__number 4 года
+                                span Срок обучения
+                            .direction__info-wrapper
+                                p.direction__number 30/30
+                                span Бюджетных/контрактных мест
+                            .direction__info-wrapper
+                                p.direction__number 30/30
+                                span Бюджетных/контрактных мест
+                        hr
+                        p.direction__id 54.03.01
+                li.directions__item
+                    a(href="#")
+                        h4.direction__title Безопасность информационных технологий в правоохранительной сфере
+                        .direction__info
+                            .direction__info-wrapper
+                                p.direction__number 410 000
+                                span Стоимость в руб. на 2020
+                            .direction__info-wrapper
+                                p.direction__number 4 года
+                                span Срок обучения
+                            .direction__info-wrapper
+                                p.direction__number 30/30
+                                span Бюджетных/контрактных мест
+                            .direction__info-wrapper
+                                p.direction__number 30/30
+                                span Бюджетных/контрактных мест
+                        hr
+                        p.direction__id 54.03.01
+            button(type="button").direction__more.btn.btn--secondary Смотреть все
+    section.useful
+        .useful__container.container
+            h2.useful__title.title.title--secondary Полезные ссылки
+            ul.useful__list
+                li.useful__item
+                    a(href="#").useful__link Информация о целевом приеме
+                    a(href="#").useful__link Образец договора на оказание платных образовательных услуг
+                    a(href="#").useful__link Оплата услуг
+                li.useful__item
+                    a(href="#").useful__link Общежития РГСУ
+                    a(href="#").useful__link Подготовительные курсы есть у РГСУ
+                    a(href="#").useful__link Правила приема
+                li.useful__item
+                    a(href="#").useful__link Информация для иностранных студентов
+                    a(href="#").useful__link Как подать заявку на электронное обучение?
+                    a(href="#").useful__link Наличие бюджетных мест
+                li.useful__item
+                    a(href="#").useful__link Где узнать информацию для иностранных студентов
+                    a(href="#").useful__link Как подать электронную заявку на обучение
+                    a(href="#").useful__link Факультеты
     section.consult
         .consult__container.container
             h2.consult__title.title.title--block Получить консультацию
             form.consult__form
                 input(type="text" id="name" placeholder="Имя").consult__name
                 input(type="email" id="mail" placeholder="Электронная почта").consult__mail
-                input(type="tel" id="tel" placeholder="Телефон").consult__input        
+                input(type="tel" id="tel" placeholder="Телефон").consult__input
                 select.consult__select
                     option(disabled=true selected=true) Уровень образования
                     option(value="0") Ноль без палочки
@@ -18,7 +182,7 @@ main.main
                 label(for="checkOne").checkbox__label.consult__checkbox Нажимая на кнопку, вы даете согласие на обработку своих  <a href="#"> персональных данных</a>
                     input(type='checkbox' id="checkOne").checkbox__input
                     span.checkbox__appearance
-                button(type="submit").consult__submit.btn Отправить    
+                button(type="submit").consult__submit.btn Отправить
                 //- button.consult__btn
                 //-     svg(width="13" height="13")
                 //-         use(href="#vector")
@@ -28,13 +192,13 @@ main.main
 
     section.contacts
         .contacts__container.container
-            h2.contacts__title.title.title--block Контакты приемной комисии
+            h2.contacts__title.title.title--secondary Контакты приемной комисии
             address.contacts__address Адрес: г. Москва, ул. Вильгельма Пика, д. 4, стр. 8
-            span.contacts__descr Телефон 
+            span.contacts__descr Телефон
                 a.contacts__tel-link(href="tel:+79000000000") +7(495) 255-67-67
-            span.contacts__descr Чат в telegram-канале: 
+            span.contacts__descr Чат в telegram-канале:
                 a(href="#").contacts__link https://t.me/PKRGSU_cha
-            span.contacts__descr Mail: 
+            span.contacts__descr Mail:
                 a(href="#").contacts__link pk@rgsu.net
-            span.contacts__descr Группа в Вконтакте: 
-                a(href="#").contacts__link abiturient_rgsu            
+            span.contacts__descr Группа в Вконтакте:
+                a(href="#").contacts__link abiturient_rgsu

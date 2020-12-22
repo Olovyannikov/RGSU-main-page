@@ -1,0 +1,124 @@
+.directions-grid {
+    padding-bottom: 51px;
+    margin-bottom: 42px;
+
+}
+
+.directions-grid__wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 10px 13px;
+    grid-template-areas:
+    "directions-grid__big"
+    " directions-grid__cell--1"
+    " directions-grid__cell--2"
+    " directions-grid__cell--3"
+    " directions-grid__cell--4";
+
+    @media (min-width: $tablet) {
+
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+    "directions-grid__big directions-grid__big directions-grid__cell--1 directions-grid__cell--2"
+    "directions-grid__big directions-grid__big directions-grid__cell--3 directions-grid__cell--4";
+    }
+}
+
+.directions-grid__big {
+    position: relative;
+    grid-area: directions-grid__big;
+    border-radius: 2.5px;
+    overflow: hidden;
+    @media (min-width: $tablet) {
+        width: auto;
+        height: auto;
+    }
+    img {
+        transition: .5s;
+        display: block;
+        width: 100%;
+    }
+    &:hover img {
+        transform: scale(1.1);
+    }
+    &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(0, 49, 79, 0.25);
+    }
+}
+.directions-grid__cell {
+
+    position: relative;
+    border-radius: 2.5px;
+    overflow: hidden;
+    @media (min-width: $tablet) {
+        width: auto;
+        height: auto;
+    }
+    img {
+        transition: .5s;
+        display: block;
+        width: 100%;
+    }
+    &:hover img {
+        transform: scale(1.1);
+    }
+    &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(0, 49, 79, 0.25);
+    }
+}
+.directions-grid__cell--1 { grid-area: directions-grid__cell--1; }
+
+.directions-grid__cell--2 { grid-area: directions-grid__cell--2; }
+
+.directions-grid__cell--3 { grid-area: directions-grid__cell--3; }
+
+.directions-grid__cell--4 { grid-area: directions-grid__cell--4; }
+
+.directions-grid__info {
+    z-index: 2;
+    content: '';
+    width: 100%;
+    height: fit-content;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 16px;
+    left: 26px;
+    color: $c-white-0;
+    h3 {
+        font-size: rem-calc(18);
+        line-height: rem-calc(21);
+        margin: 0 0 5px;
+    }
+    a {
+        color: $c-white-0;
+        display: block;
+        margin-bottom: 5px;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    &--big {
+        top: 33px;
+        h3 {
+            font-size: rem-calc(36);
+            line-height: rem-calc(42);
+        }
+    }
+}

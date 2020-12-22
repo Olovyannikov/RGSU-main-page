@@ -1,0 +1,38 @@
+.useful {
+
+    padding-bottom: 40px;
+}
+
+.useful__title {
+    margin-bottom: 39px;
+}
+
+.useful__list {
+    @include list-reset;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+
+}
+
+.useful__item {
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 2.5px;
+    display: flex;
+    flex-direction: column;
+    a {
+        font-size: rem-calc(16);
+        line-height: rem-calc(19);
+        margin-bottom: 10px;
+        &:hover {
+            color: $c-black-0;
+        }
+    }
+    @media (min-width: $tablet) {
+        width: 225px;
+        border: 1px solid #337AB7;
+        padding: 20px;
+    }
+}

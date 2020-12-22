@@ -1,0 +1,29 @@
+.info {
+    padding-bottom: 40px;
+    font-size: rem-calc(14);
+    line-height: rem-calc(16);
+    color: $c-black-0;
+    @media (min-width: $tablet) {
+        padding-bottom: 81px;
+    }
+    span {
+        display: block;
+        font-weight: bold;
+        font-size: rem-calc(36);
+        line-height: rem-calc(42);
+        margin: 0 0 5px;
+    }
+}
+
+.info__container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.info__wrapper {
+    width: 181px;
+    margin-bottom: 46px;
+    @media (min-width: 630px) {
+        width: 240px;
+    }
+}
