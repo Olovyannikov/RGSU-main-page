@@ -194,7 +194,7 @@
 }
 
 .header__navigation {
-    position: absolute;
+    position: fixed;
     z-index: 3;
     background: $c-blue-600;
     width: 100%;
@@ -202,13 +202,12 @@
     bottom: 0;
     left: 0;
     right: 0;
-    transition: 0.5s;
     transform: translateX(-100%);
+    visibility: hidden;
     color: $c-white-0;
-    overflow-y: scroll;
     .menu-opened & {
         transform: translateX(0%);
-        overflow: hidden;
+        visibility: visible;
     }
     @media (min-width: $tablet) {
         padding-left: 50px;

@@ -1195,7 +1195,7 @@ button.swiper-pagination-bullet {
 }
 
 .header__navigation {
-  position: absolute;
+  position: fixed;
   z-index: 3;
   background: #022438;
   width: 100%;
@@ -1203,21 +1203,18 @@ button.swiper-pagination-bullet {
   bottom: 0;
   left: 0;
   right: 0;
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
   -webkit-transform: translateX(-100%);
       -ms-transform: translateX(-100%);
           transform: translateX(-100%);
+  visibility: hidden;
   color: #FFFFFF;
-  overflow-y: scroll;
 }
 
 .menu-opened .header__navigation {
   -webkit-transform: translateX(0%);
       -ms-transform: translateX(0%);
           transform: translateX(0%);
-  overflow: hidden;
+  visibility: visible;
 }
 
 .header__dropdown {
@@ -1277,10 +1274,13 @@ button.swiper-pagination-bullet {
 
 .navigation__list-main {
   width: 270px;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
 }
 
 .navigation__submenu {
-  position: fixed;
+  position: absolute;
   top: 0;
   bottom: 0;
   left: 10%;

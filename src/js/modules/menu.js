@@ -15,6 +15,9 @@ export default () => {
     }
 
     if (document.body.offsetWidth < 769) {
+
+        header.classList.remove(`header--menu-opened`);
+        document.body.classList.remove(`menu-opened`);
         for (let i = 0; i < menuItems.length; i++) {
             menuItems[i].onclick = function () {
                 if (menuItems[i].querySelector(".navigation__list")) {
