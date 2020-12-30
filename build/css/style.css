@@ -807,7 +807,7 @@ textarea:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 30px;
+  width: 50px;
   margin: 0 auto;
 }
 
@@ -866,8 +866,8 @@ textarea:hover {
 }
 
 .swiper-pagination-bullet {
-  width: 6px;
-  height: 6px;
+  width: 10px;
+  height: 10px;
   display: inline-block;
   border-radius: 50%;
   background: #fff;
@@ -892,7 +892,7 @@ button.swiper-pagination-bullet {
 .swiper-pagination-bullet-active {
   opacity: 1;
   background: #9d9d9d;
-  height: 6px;
+  height: 10px;
 }
 
 .swiper-container-horizontal
@@ -959,6 +959,7 @@ button.swiper-pagination-bullet {
 .gallery .swiper-slide {
   background-size: cover;
   background-position: center;
+  cursor: pointer;
 }
 
 .gallery .gallery-top {
@@ -1203,18 +1204,19 @@ button.swiper-pagination-bullet {
   bottom: 0;
   left: 0;
   right: 0;
-  -webkit-transform: translateX(-100%);
-      -ms-transform: translateX(-100%);
-          transform: translateX(-100%);
-  visibility: hidden;
+  -webkit-transform: translateX(-500%);
+      -ms-transform: translateX(-500%);
+          transform: translateX(-500%);
   color: #FFFFFF;
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s;
 }
 
 .menu-opened .header__navigation {
   -webkit-transform: translateX(0%);
       -ms-transform: translateX(0%);
           transform: translateX(0%);
-  visibility: visible;
 }
 
 .header__dropdown {
@@ -1270,10 +1272,10 @@ button.swiper-pagination-bullet {
   margin: 0;
   list-style: none;
   padding: 60px 0 0;
+  width: 100%;
 }
 
 .navigation__list-main {
-  width: 270px;
   -webkit-transition: 0.2s;
   -o-transition: 0.2s;
   transition: 0.2s;
@@ -1281,18 +1283,22 @@ button.swiper-pagination-bullet {
 
 .navigation__submenu {
   position: absolute;
+  -webkit-transform: translateX(1000%);
+      -ms-transform: translateX(1000%);
+          transform: translateX(1000%);
   top: 0;
   bottom: 0;
   left: 10%;
-  -webkit-transform: translateX(100%);
-      -ms-transform: translateX(100%);
-          transform: translateX(100%);
   right: 0;
   background: #1e598b;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
   z-index: 2;
+}
+
+.navigation__submenu li > a::after {
+  right: 5rem;
 }
 
 .navigation__submenu--active {
@@ -1600,6 +1606,10 @@ header .social {
   color: #FFFFFF;
 }
 
+.footer__list-item span {
+  display: block;
+}
+
 .footer__list--contacts {
   padding-bottom: 0;
 }
@@ -1735,13 +1745,13 @@ header .social {
   background: #888a97;
 }
 
-.accordion .accordion-button[aria-expanded="true"] .icon {
+.accordion .accordion-button--active .icon {
   -webkit-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
           transform: rotate(45deg);
 }
 
-.accordion .accordion-button[aria-expanded="true"] + .accordion-content {
+.accordion .accordion-button--active + .accordion-content {
   opacity: 1;
   max-height: 9em;
   -webkit-transition: all 200ms linear;
@@ -2240,23 +2250,23 @@ header .social {
 }
 
 .tabs__search::-webkit-input-placeholder {
-  color: #9fcced;
+  color: #fff;
 }
 
 .tabs__search::-moz-placeholder {
-  color: #9fcced;
+  color: #fff;
 }
 
 .tabs__search:-ms-input-placeholder {
-  color: #9fcced;
+  color: #fff;
 }
 
 .tabs__search::-ms-input-placeholder {
-  color: #9fcced;
+  color: #fff;
 }
 
 .tabs__search::placeholder {
-  color: #9fcced;
+  color: #fff;
 }
 
 .tabs__select {
@@ -2717,15 +2727,15 @@ header .social {
   display: flex;
   margin-bottom: 36px;
   position: relative;
+  gap: 5px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: 5px;
 }
 
 .fast-links__link {
   color: #337AB7;
   font-size: 1rem;
-  line-height: 1.1875rem;
+  line-height: 1.5rem;
   padding: 13px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2740,6 +2750,8 @@ header .social {
   -webkit-transition: 0.2s;
   -o-transition: 0.2s;
   transition: 0.2s;
+  width: 49%;
+  height: 66px;
 }
 
 .fast-links__link svg {
@@ -3224,7 +3236,7 @@ header .social {
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
   gap: 10px 13px;
-  grid-template-areas: "directions-grid__big" " directions-grid__cell--1" " directions-grid__cell--2" " directions-grid__cell--3" " directions-grid__cell--4";
+  grid-template-areas: "directions-grid__big" " directions-grid__cell--1" " directions-grid__cell--2" " directions-grid__cell--3" " directions-grid__cell--4";
 }
 
 .directions-grid__big {
@@ -3740,6 +3752,10 @@ header .social {
     opacity: 1;
   }
 
+  .navigation__list.navigation__submenu {
+    padding-top: 0;
+  }
+
   .navigation__list-main {
     width: 25%;
   }
@@ -3769,27 +3785,27 @@ header .social {
     content: "";
     position: absolute;
     left: -100%;
-    visibility: hidden;
     width: 1rem;
     top: 50%;
     height: 2px;
     background: #fefefe;
+    visibility: hidden;
   }
 
   .navigation__item:hover {
-    padding-left: 30px;
+    padding-left: 10px;
     opacity: 1;
   }
 
   .navigation__item:hover::before {
     visibility: visible;
-    left: 1rem;
+    left: 0;
   }
 
   .navigation__item:hover > .navigation__submenu {
-    -webkit-transform: translateX(0);
-        -ms-transform: translateX(0);
-            transform: translateX(0);
+    -webkit-transform: translateX(100%);
+        -ms-transform: translateX(100%);
+            transform: translateX(100%);
   }
 
   .navigation__item a.navigation__link--hasSubmenu {
@@ -3841,7 +3857,6 @@ header .social {
 
   .footer__list-item span {
     margin-bottom: 10px;
-    display: block;
   }
 
   .footer__list-item a:hover {
@@ -4276,7 +4291,7 @@ header .social {
   .directions-grid__wrapper {
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-areas: "directions-grid__big directions-grid__big directions-grid__cell--1 directions-grid__cell--2" "directions-grid__big directions-grid__big directions-grid__cell--3 directions-grid__cell--4";
+    grid-template-areas: "directions-grid__big directions-grid__big directions-grid__cell--1 directions-grid__cell--2" "directions-grid__big directions-grid__big directions-grid__cell--3 directions-grid__cell--4";
   }
 
   .directions-grid__big {

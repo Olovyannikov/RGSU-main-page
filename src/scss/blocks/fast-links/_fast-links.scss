@@ -6,14 +6,15 @@
     display: flex;
     margin-bottom: 36px;
     position: relative;
-    flex-wrap: wrap;
     gap: 5px;
+    flex-wrap: wrap;
+
 }
 
 .fast-links__link {
     color: $c-blue-300;
     font-size: rem-calc(16);
-    line-height: rem-calc(19);
+    line-height: rem-calc(24);
     padding: 13px;
     display: flex;
     align-items: center;
@@ -22,6 +23,8 @@
     position: relative;
     padding-right: 15%;
     transition: 0.2s;
+    width: 49%;
+    height: 66px;
     svg {
         position: absolute;
         fill: transparent;

@@ -74,7 +74,7 @@
             }
         }
     }
-    .accordion-button[aria-expanded="true"] {
+    .accordion-button--active {
         .icon {
             transform: rotate(45deg);
         }

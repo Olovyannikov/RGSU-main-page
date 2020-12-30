@@ -202,12 +202,11 @@
     bottom: 0;
     left: 0;
     right: 0;
-    transform: translateX(-100%);
-    visibility: hidden;
+    transform: translateX(-500%);
     color: $c-white-0;
+    transition: .5s;
     .menu-opened & {
         transform: translateX(0%);
-        visibility: visible;
     }
     @media (min-width: $tablet) {
         padding-left: 50px;
