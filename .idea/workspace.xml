@@ -2,26 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="20fd1486-6c97-43ed-b28d-aee36dd51278" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/abiturients.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/abiturients.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/components.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/css/style.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/css/style.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/events.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/events.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/inner.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/inner.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/js/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/js/script.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/js/script.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/news.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/news.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/modules/accordion.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/modules/accordion.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pug/sections/components/fast-links/_fast-links.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/pug/sections/components/fast-links/_fast-links.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/blocks/accordion/_accordion.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/blocks/accordion/_accordion.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/blocks/fast-links/_fast-links.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/blocks/fast-links/_fast-links.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/blocks/footer/_footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/blocks/footer/_footer.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/blocks/header/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/blocks/header/_header.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/blocks/header/_navigation.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/blocks/header/_navigation.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/blocks/tabs/_tabs.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/blocks/tabs/_tabs.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/vendor/swiper.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/vendor/swiper.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/id_work" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/id_work.pub" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/id_working" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/id_working.pub" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +79,7 @@
       <workItem from="1608216447815" duration="806000" />
       <workItem from="1608617093798" duration="596000" />
       <workItem from="1608617742879" duration="17268000" />
-      <workItem from="1609309792368" duration="2344000" />
+      <workItem from="1609309792368" duration="2810000" />
     </task>
     <servers />
   </component>
