@@ -9,6 +9,9 @@
                 opacity: 0.5;
             }
             .navigation__item:hover {
+                & > .navigation__submenu {
+                    visibility: visible;
+                }
                 & > a {
                     opacity: 1;
                 }
@@ -38,6 +41,7 @@
 .navigation__submenu {
     position: absolute;
     transform: translateX(1000%);
+    visibility: hidden;
     top: 0;
     bottom: 0;
     left: 10%;
@@ -57,6 +61,7 @@
 .navigation__submenu--active {
     transform: translateX(0);
     padding-top: 20px;
+    visibility: visible;
 }
 
 .navigation__submenu-submenu {
@@ -87,7 +92,7 @@
                 left: 0;
             }
             > .navigation__submenu {
-                transform: translateX(100%);
+                transform: translateX(65%);
             }
         }
     }

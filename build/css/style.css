@@ -1286,6 +1286,7 @@ button.swiper-pagination-bullet {
   -webkit-transform: translateX(1000%);
       -ms-transform: translateX(1000%);
           transform: translateX(1000%);
+  visibility: hidden;
   top: 0;
   bottom: 0;
   left: 10%;
@@ -1306,6 +1307,7 @@ button.swiper-pagination-bullet {
       -ms-transform: translateX(0);
           transform: translateX(0);
   padding-top: 20px;
+  visibility: visible;
 }
 
 .navigation__submenu-submenu {
@@ -1695,11 +1697,9 @@ header .social {
   color: #1E598B;
 }
 
-.accordion .accordion-button:hover .icon::after,
-.accordion .accordion-button:hover .icon::before,
-.accordion .accordion-button:focus .icon::after,
-.accordion .accordion-button:focus .icon::before {
-  background: #337ab7;
+.accordion .accordion-button:hover .icon svg,
+.accordion .accordion-button:focus .icon svg {
+  fill: #337ab7;
 }
 
 .accordion .accordion-button .icon {
@@ -1713,42 +1713,23 @@ header .social {
   width: 15px;
   height: 15px;
   border-radius: 22px;
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
+  -webkit-transform: translateY(-50%) translateX(-50%);
+      -ms-transform: translateY(-50%) translateX(-50%);
+          transform: translateY(-50%) translateX(-50%);
 }
 
-.accordion .accordion-button .icon::before {
-  display: block;
-  position: absolute;
-  content: "";
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  width: 100%;
-  height: 2px;
-  background: #888a97;
-}
-
-.accordion .accordion-button .icon::after {
-  display: block;
-  position: absolute;
-  content: "";
-  top: 46%;
-  left: -45%;
-  width: 100%;
-  height: 2px;
-  -webkit-transform: rotate(90deg);
-      -ms-transform: rotate(90deg);
-          transform: rotate(90deg);
-  background: #888a97;
+.accordion .accordion-button .icon svg {
+  fill: #888A97;
 }
 
 .accordion .accordion-button--active .icon {
-  -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-          transform: rotate(45deg);
+  -webkit-transform: rotate(45deg) translateY(-25%) translateX(-50%);
+      -ms-transform: rotate(45deg) translateY(-25%) translateX(-50%);
+          transform: rotate(45deg) translateY(-25%) translateX(-50%);
+}
+
+.accordion .accordion-button--active .icon svg {
+  fill: #337AB7;
 }
 
 .accordion .accordion-button--active + .accordion-content {
@@ -3236,7 +3217,7 @@ header .social {
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
   gap: 10px 13px;
-  grid-template-areas: "directions-grid__big" " directions-grid__cell--1" " directions-grid__cell--2" " directions-grid__cell--3" " directions-grid__cell--4";
+  grid-template-areas: "directions-grid__big" " directions-grid__cell--1" " directions-grid__cell--2" " directions-grid__cell--3" " directions-grid__cell--4";
 }
 
 .directions-grid__big {
@@ -3748,6 +3729,10 @@ header .social {
     opacity: 0.5;
   }
 
+  .navigation__list:hover .navigation__item:hover > .navigation__submenu {
+    visibility: visible;
+  }
+
   .navigation__list:hover .navigation__item:hover > a {
     opacity: 1;
   }
@@ -3803,9 +3788,9 @@ header .social {
   }
 
   .navigation__item:hover > .navigation__submenu {
-    -webkit-transform: translateX(100%);
-        -ms-transform: translateX(100%);
-            transform: translateX(100%);
+    -webkit-transform: translateX(65%);
+        -ms-transform: translateX(65%);
+            transform: translateX(65%);
   }
 
   .navigation__item a.navigation__link--hasSubmenu {
@@ -4291,7 +4276,7 @@ header .social {
   .directions-grid__wrapper {
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-areas: "directions-grid__big directions-grid__big directions-grid__cell--1 directions-grid__cell--2" "directions-grid__big directions-grid__big directions-grid__cell--3 directions-grid__cell--4";
+    grid-template-areas: "directions-grid__big directions-grid__big directions-grid__cell--1 directions-grid__cell--2" "directions-grid__big directions-grid__big directions-grid__cell--3 directions-grid__cell--4";
   }
 
   .directions-grid__big {
