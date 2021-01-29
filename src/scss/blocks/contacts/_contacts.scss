@@ -2,8 +2,8 @@
     padding-bottom: 50px;
     padding-top: 40px;
     @media (min-width: $tablet) {
-        padding-top: 70px;
-        padding-bottom: 35px;
+        padding-top: 40px;
+        padding-bottom: 68px;
     }
 }
 
@@ -16,13 +16,13 @@
     font-style: normal;
     margin: 0;
     font-size: rem-calc(14);
-    line-height: rem-calc(19);
+    line-height: rem-calc(19.32);
 }
 
 .contacts__descr {
     display: block;
     font-size: rem(14);
-    line-height: rem-calc(19);
+    line-height: rem-calc(19.32);
 }
 
 .contacts__tel-link {

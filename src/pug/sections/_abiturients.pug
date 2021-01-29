@@ -174,11 +174,15 @@ main.main
                 input(type="text" id="name" placeholder="Имя").consult__name
                 input(type="email" id="mail" placeholder="Электронная почта").consult__mail
                 input(type="tel" id="tel" placeholder="Телефон").consult__input
-                select.consult__select
-                    option(disabled=true selected=true) Уровень образования
-                    option(value="0") Ноль без палочки
-                    option(value="1") Бэтмен
-                    option(value="2") Владыка ситхов
+                .consult__select-box
+                    
+                    select.consult__select
+                        option(disabled=true selected=true) Уровень образования
+                        option(value="0") Ноль без палочки
+                        option(value="1") Бэтмен
+                        option(value="2") Владыка ситхов
+                    svg(width="14" height="14" fill="#9d9d9d")
+                        use(href="#truechevron")    
                 label(for="checkOne").checkbox__label.consult__checkbox Нажимая на кнопку, вы даете согласие на обработку своих  <a href="#"> персональных данных</a>
                     input(type='checkbox' id="checkOne").checkbox__input
                     span.checkbox__appearance
@@ -194,11 +198,11 @@ main.main
         .contacts__container.container
             h2.contacts__title.title.title--secondary Контакты приемной комисии
             address.contacts__address Адрес: г. Москва, ул. Вильгельма Пика, д. 4, стр. 8
-            span.contacts__descr Телефон
+            span.contacts__descr Телефон: 
                 a.contacts__tel-link(href="tel:+79000000000") +7(495) 255-67-67
-            span.contacts__descr Чат в telegram-канале:
+            span.contacts__descr Чат в telegram-канале: 
                 a(href="#").contacts__link https://t.me/PKRGSU_cha
-            span.contacts__descr Mail:
+            span.contacts__descr Mail: 
                 a(href="#").contacts__link pk@rgsu.net
-            span.contacts__descr Группа в Вконтакте:
+            span.contacts__descr Группа в Вконтакте: 
                 a(href="#").contacts__link abiturient_rgsu

@@ -15,7 +15,8 @@
 }
 
 .consult__name {
-    margin-bottom: 15px;width: 100%;
+    margin-bottom: 15px;
+    width: 100%;
     @media (min-width: $tablet) {
         width: 240px;
     }
@@ -47,6 +48,21 @@
     height: 55px;
     @media (min-width: $tablet) {
         width: 240px;
+    }
+    // &:focus-within {
+    //     ~ svg {
+    //         transform: rotate(180deg);
+    //     }
+    // }
+}
+
+.consult__select-box {
+    position: relative;
+    svg {
+        transition: 0.2s;
+        position: absolute;
+        right: 18px;
+        top: 22px;
     }
 }
 // .consult__btn {
