@@ -30,9 +30,8 @@
     }
     @media (min-width: $tablet) {
         order: 1;
-        margin-left: auto;
         position: relative;
-        left: 75px;
+        left: calc(100% - 67%);
         svg {
             fill: $c-blue-600;
             width: 149px;
@@ -46,9 +45,9 @@
 .header__search[type="search"] {
     margin-left: auto;
     margin-right: 21px;
-    width: 26px;
+    width: 30px;
     padding: 0;
-    color: transparent;
+    color: #fff;
     cursor: pointer;
     background: url("../img/icons/loupe.svg") no-repeat 0px center;
     background-size: 27px;
@@ -70,9 +69,9 @@
         padding-left: 5px;
         padding-top: 0;
         padding-bottom: 0;
-        color: #000;
+        color: #fff;
         cursor: auto;
-        background: $c-grey-200 url("../img/icons/loupe-dark.svg") no-repeat 90% center;
+        background: url("../img/icons/loupe-dark.svg") no-repeat 90% center;
         background-size: 15px;
     }
     @media (min-width: $tablet) {
@@ -84,6 +83,7 @@
         box-sizing: border-box;
         border-radius: 0;
         padding-left: 0;
+        transition: 0.5s;
         background: $c-white-0 url("../img/icons/loupe-dark.svg") no-repeat 75px center;
         &:focus {
             padding-top: 10px;
@@ -91,7 +91,7 @@
             width: 220px;
             padding-bottom: 10px;
             box-sizing: border-box;
-            background: $c-grey-200 url("../img/icons/loupe.svg") no-repeat 185px center;
+            background: url("../img/icons/loupe-dark.svg") no-repeat 183px center;
             background-size: 15px;
             &::placeholder {
                 color: transparent;
@@ -204,7 +204,7 @@
     right: 0;
     transform: translateX(-500%);
     color: $c-white-0;
-    transition: .5s;
+    transition: 0.5s;
     .menu-opened & {
         transform: translateX(0%);
     }
@@ -223,9 +223,9 @@
     line-height: rem-calc(16);
     position: relative;
     cursor: pointer;
-    transition: 0.5s;
+    transition: 0.2s;
     &::after {
-        transition: 0.5s;
+        transition: 0.2s;
         content: "";
         position: absolute;
         display: block;
@@ -238,6 +238,7 @@
     }
     &:hover {
         background: $c-blue-400;
+        width: 132px;
         &::after {
             transform: translateY(-50%) rotate(-90deg);
         }

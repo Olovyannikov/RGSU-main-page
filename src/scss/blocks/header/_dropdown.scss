@@ -9,11 +9,11 @@
 .dropdown__list {
     visibility: hidden;
     position: absolute;
-    left: -20%;
+    left: -0%;
     top: 100%;
     @include list-reset;
     background: $c-blue-600;
-    width: 120%;
+    width: 132px;
     .dropdown:hover & {
         visibility: visible;
         z-index: 10;

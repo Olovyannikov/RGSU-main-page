@@ -1,7 +1,7 @@
-import {default as menu} from './modules/menu.js';
-import {default as accordion} from './modules/accordion.js';
-import {default as swiper} from './modules/swiper.js';
-import {default as tabs} from './modules/tabs.js';
+import { default as menu } from './modules/menu.js';
+import { default as accordion } from './modules/accordion.js';
+import { default as swiper } from './modules/swiper.js';
+import { default as tabs } from './modules/tabs.js';
 
 menu();
 accordion();
@@ -20,11 +20,17 @@ window.onscroll = () => {
     }
 }
 
-toUp.addEventListener('mouseover', ()=> {
+toUp.addEventListener('mouseover', () => {
     toUp.style.opacity = '1';
 });
 
 
-toUp.addEventListener('mouseout', ()=> {
+toUp.addEventListener('mouseout', () => {
     toUp.style.opacity = '0.5';
+})
+
+const headerSearch = document.querySelector('.header__search');
+
+headerSearch.addEventListener('blur', () => {
+    headerSearch.value = ``;
 })

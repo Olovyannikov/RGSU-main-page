@@ -9,70 +9,97 @@
     margin-bottom: 45px;
 }
 
-.forms__email-input {
-    font-size: rem-calc(14);
-    line-height: rem-calc(19);
-    display:block;
-    width: 100%;
-    border: 1px solid #757575;
-    color: $c-black-0;
-    @media (min-width: $tablet) {
-        max-width: 390px;
+$font-size: 16px;
+$main-color: $c-blue-100;
+
+.material-input {
+    position: relative;
+    width: 390px;
+    height: 55px;
+    .isCorrect {
+        opacity: 0;
+        position: absolute;
+        right: 16px;
+        top: 21px;
+    }
+    label,
+    input,
+    .error {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        font-size: $font-size;
+    }
+    label {
+        left: 15px;
+        top: 35%;
+        font-size: rem-calc(14);
+        line-height: rem-calc(16.41);
+        color: $c-grey-300;
+    }
+    input {
+        background: none;
+        z-index: 2;
+        &:focus {
+            outline: none;
+        }
+        &:focus + label,
+        &:valid + label,
+        &:not(:placeholder-shown) + label {
+            line-height: rem-calc(12.89);
+            font-size: rem-calc(11);
+            top: 12%;
+        }
+        &:placeholder-shown ~ .error,
+        &:valid ~ .error {
+            opacity: 0;
+        }
+        &:valid ~ .isCorrect {
+            opacity: 1;
+        }
+        &:focus + label {
+            color: $main-color;
+
+            & + .error {
+                opacity: 0;
+            }
+        }
+        &:not(:focus):not(:placeholder-shown):invalid {
+            transition-delay: 0s;
+            color: $c-red-0;
+            border-color: $c-red-0;
+            & + label {
+                transition: all 0.2s 0s;
+                color: $c-red-0;
+            }
+        }
+    }
+    label {
+        color: #666;
+        transition: 0.2s all cubic-bezier(0.4, 0, 0.2, 1);
+        z-index: 1;
+        &:after {
+            content: "";
+            visibility: hidden;
+            position: absolute;
+            left: calc(50% - 5px);
+            bottom: 0;
+            background-color: $main-color;
+            width: 10px;
+            height: 2px;
+            transition-duration: 0.2s;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            z-index: 10;
+        }
+    }
+    .error {
+        position: absolute;
+        bottom: -15px;
+        left: 0;
+        color: $c-red-0;
+        font-size: rem-calc(11);
+        line-height: rem-calc(12.89);
+        opacity: 1;
+        transition: all 0.2s;
     }
 }
-
-.forms__email-label {
-    color:#999;
-    font-size: rem-calc(14);
-    line-height: rem-calc(16);
-    font-weight:normal;
-    position:absolute;
-    pointer-events:none;
-    left: 15px;
-    top: 50%;
-    transform: translateY(-50%);
-    transition:0.2s ease all;
-}
-
-.forms__email-input:focus ~ .forms__email-label,
-.forms__email-input:valid ~ .forms__email-label {
-    top: 25%;
-    font-size:rem-calc(11);
-    line-height: rem-calc(13);
-    color: $c-grey-200;
-}
-
-.forms__email-input:valid {
-    color: $c-blue-400;
-    background: url("../img/icons/check.svg") no-repeat 98% center;
-    @media (min-width: $tablet) {
-        background-position: 95% center;
-    }
-}
-
-.forms__email-input:focus:valid {
-    border: 1px solid $c-blue-300;
-    color: $c-black-0;
-}
-
-.forms__email-input:valid:focus ~ .forms__email-label {
-    color: $c-blue-300;
-}
-
-.forms__email-input:invalid:focus ~ .forms__email-label {
-    color: $c-red-0;
-}
-
-.forms__email-invalid {
-    visibility: hidden;
-    position: absolute;
-    color: $c-red-0;
-    font-size: rem-calc(11);
-    line-height: rem-calc(13);
-    margin-top: 2px;
-}
-
-.forms__email-input:invalid:focus ~ .forms__email-invalid {
-    visibility: visible;
-}
-

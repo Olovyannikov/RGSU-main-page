@@ -203,37 +203,37 @@
               <picture>
                 <source srcset="img/gallery-0.webp" type="image/webp"/><img class="news-block__image" src="img/gallery-0.png"/>
               </picture>
-              <time class="news-block__datetime" pubdate="pubdate" datetime="2020-10-03">03 октября, 2020</time><a class="news-block__link">Как будут учиться школьники после каникул: ответы на основные вопросы</a><a class="news-block__tag-link tag-link">Поступающим</a>
+              <time class="news-block__datetime" pubdate="pubdate" datetime="2020-10-03">03 октября, 2020</time><a class="news-block__link" href="#">Как будут учиться школьники после каникул: ответы на основные вопросы</a><a class="news-block__tag-link tag-link" href="#">Поступающим</a>
             </article>
             <article class="news-block__item">
               <picture>
                 <source srcset="img/gallery-0.webp" type="image/webp"/><img class="news-block__image" src="img/gallery-0.png"/>
               </picture>
-              <time class="news-block__datetime" pubdate="pubdate" datetime="2020-10-03">03 октября, 2020</time><a class="news-block__link">Как будут учиться школьники после каникул: ответы на основные вопросы</a><a class="news-block__tag-link tag-link">Поступающим</a>
+              <time class="news-block__datetime" pubdate="pubdate" datetime="2020-10-03">03 октября, 2020</time><a class="news-block__link" href="#">Как будут учиться школьники после каникул: ответы на основные вопросы</a><a class="news-block__tag-link tag-link" href="#">Поступающим</a>
             </article>
             <article class="news-block__item">
               <picture>
                 <source srcset="img/gallery-0.webp" type="image/webp"/><img class="news-block__image" src="img/gallery-0.png"/>
               </picture>
-              <time class="news-block__datetime" pubdate="pubdate" datetime="2020-10-03">03 октября, 2020</time><a class="news-block__link">Как будут учиться школьники после каникул: ответы на основные вопросы</a><a class="news-block__tag-link tag-link">Поступающим</a>
+              <time class="news-block__datetime" pubdate="pubdate" datetime="2020-10-03">03 октября, 2020</time><a class="news-block__link" href="#">Как будут учиться школьники после каникул: ответы на основные вопросы</a><a class="news-block__tag-link tag-link" href="#">Поступающим</a>
             </article>
             <article class="news-block__item">
               <picture>
                 <source srcset="img/gallery-0.webp" type="image/webp"/><img class="news-block__image" src="img/gallery-0.png"/>
               </picture>
-              <time class="news-block__datetime" pubdate="pubdate" datetime="2020-10-03">03 октября, 2020</time><a class="news-block__link">Как будут учиться школьники после каникул: ответы на основные вопросы</a><a class="news-block__tag-link tag-link">Поступающим</a>
+              <time class="news-block__datetime" pubdate="pubdate" datetime="2020-10-03">03 октября, 2020</time><a class="news-block__link" href="#">Как будут учиться школьники после каникул: ответы на основные вопросы</a><a class="news-block__tag-link tag-link" href="#">Поступающим</a>
             </article>
             <article class="news-block__item">
               <picture>
                 <source srcset="img/gallery-0.webp" type="image/webp"/><img class="news-block__image" src="img/gallery-0.png"/>
               </picture>
-              <time class="news-block__datetime" pubdate="pubdate" datetime="2020-10-03">03 октября, 2020</time><a class="news-block__link">Как будут учиться школьники после каникул: ответы на основные вопросы</a><a class="news-block__tag-link tag-link">Поступающим</a>
+              <time class="news-block__datetime" pubdate="pubdate" datetime="2020-10-03">03 октября, 2020</time><a class="news-block__link" href="#">Как будут учиться школьники после каникул: ответы на основные вопросы</a><a class="news-block__tag-link tag-link" href="#">Поступающим</a>
             </article>
             <article class="news-block__item">
               <picture>
                 <source srcset="img/gallery-0.webp" type="image/webp"/><img class="news-block__image" src="img/gallery-0.png"/>
               </picture>
-              <time class="news-block__datetime" pubdate="pubdate" datetime="2020-10-03">03 октября, 2020</time><a class="news-block__link">Как будут учиться школьники после каникул: ответы на основные вопросы</a><a class="news-block__tag-link tag-link">Поступающим</a>
+              <time class="news-block__datetime" pubdate="pubdate" datetime="2020-10-03">03 октября, 2020</time><a class="news-block__link" href="#">Как будут учиться школьники после каникул: ответы на основные вопросы</a><a class="news-block__tag-link tag-link" href="#">Поступающим</a>
             </article>
           </div>
         </div>
@@ -489,10 +489,15 @@
       <section class="forms">
         <div class="forms__container container">
           <h2 class="forms__title title title--block">Поля форм</h2>
-          <div class="form__group">
-            <input class="forms__email-input" type="email" required="required" id="formEmail"/>
-            <label class="forms__email-label" for="formEmail">Электронная почта</label><span class="forms__email-invalid">Email введен некорректно. Пример: example@domain.ru</span><span class="forms__email--isValid"></span>
-          </div>
+          <form class="form__group material-form" autocomplete="off">
+            <div class="material-input">
+              <input id="email" type="email" placeholder=" " required="true"/>
+              <label for="email">Электронная почта</label><span class="error">Email введен некорректно. Пример: example@domain.ru</span><span class="isCorrect">
+                <svg width="18" height="14" fill="#5cbc91">
+                  <use href="#check"></use>
+                </svg></span>
+            </div>
+          </form>
         </div>
       </section>
       <section class="table-block">

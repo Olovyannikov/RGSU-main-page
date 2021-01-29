@@ -105,4 +105,7 @@
     font-weight: 500;
     display: block;
     margin-bottom: 7px;
+    &:hover {
+        text-decoration: underline;
+    }
 }

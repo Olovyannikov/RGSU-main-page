@@ -32,6 +32,7 @@ body {
     }
 
     &.menu-opened {
+        overflow: hidden;
         @media (max-width: $tablet) and (orientation: portrait) {
             overflow: hidden;
         }
@@ -40,6 +41,10 @@ body {
             overflow: hidden;
         }
     }
+}
+
+body > svg {
+    display: none;
 }
 
 a {

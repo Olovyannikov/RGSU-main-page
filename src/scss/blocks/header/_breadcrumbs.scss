@@ -1,19 +1,23 @@
 .breadcrumbs {
-        display: flex;
-        margin-bottom: 19px;
-        margin-top: 20px;
-    
+    display: flex;
+    margin-bottom: 19px;
+    margin-top: 20px;
 }
 
 .breadcrumbs__history {
     @include list-reset;
     display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 .breadcrumbs__item:not(:last-child) {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
     &::after {
         color: $c-grey-300;
-        content: " ﹥ ";
+        content: " > ";
         text-decoration-line: unset;
     }
 }
