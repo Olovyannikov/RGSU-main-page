@@ -1,12 +1,14 @@
-import { default as menu } from './modules/menu.js';
-import { default as accordion } from './modules/accordion.js';
-import { default as swiper } from './modules/swiper.js';
-import { default as tabs } from './modules/tabs.js';
+import {default as menu} from './modules/menu.js';
+import {default as accordion} from './modules/accordion.js';
+import {default as swiper} from './modules/swiper.js';
+import {default as tabs} from './modules/tabs.js';
+import {default as animation} from './modules/animation.js'
 
 menu();
 accordion();
 swiper();
 tabs();
+//animation();
 
 let toUp = document.querySelector('.to-up');
 
@@ -34,3 +36,6 @@ const headerSearch = document.querySelector('.header__search');
 headerSearch.addEventListener('blur', () => {
     headerSearch.value = ``;
 })
+
+
+

@@ -135,7 +135,7 @@ function js() {
     return src(path.src.js)
         .pipe(
             webpackStream({
-                mode: "development",
+                mode: "production",
                 output: {
                     filename: "script.js",
                 },

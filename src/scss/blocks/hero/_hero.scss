@@ -1,8 +1,14 @@
 //main page
+.hero__wrapper {
+    z-index: 100;
+}
+
 .hero-main__wrapper {
     height: calc(100vh - 75px);
+    min-height: 785px;
     @media (min-width: $tablet) {
         height: calc(100vh - 129px);
+        min-height: 818px;
     }
 }
 
@@ -10,6 +16,7 @@
     padding-top: 50%;
     display: flex;
     flex-direction: column;
+
     @media (min-width: $tablet) {
     }
 }
