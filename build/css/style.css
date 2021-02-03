@@ -1085,6 +1085,10 @@ button.swiper-pagination-bullet {
   border: 1px solid transparent;
 }
 
+:root {
+  --z-index: 999;
+}
+
 .header {
   background-color: #022438;
 }
@@ -1179,7 +1183,7 @@ button.swiper-pagination-bullet {
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
-  z-index: 4;
+  z-index: calc(var(--z-index) + 1);
 }
 
 .header__menu-button:focus {
@@ -1225,7 +1229,7 @@ button.swiper-pagination-bullet {
 
 .header__navigation {
   position: fixed;
-  z-index: 3;
+  z-index: var(--z-index);
   background: #022438;
   width: 100%;
   top: 0;
@@ -3024,8 +3028,41 @@ header .social {
           transform: rotate(-360deg);
 }
 
+.hero {
+  overflow: hidden;
+  margin-bottom: 34px;
+  position: relative;
+  min-height: 347px;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 49, 79, 0.25);
+  z-index: 0;
+}
+
 .hero__wrapper {
   z-index: 100;
+  position: relative;
+  min-height: 347px;
+}
+
+.hero__wrapper::after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 49, 79, 0.25);
+  z-index: 0;
 }
 
 .hero-main__wrapper {
@@ -3111,7 +3148,7 @@ header .social {
   color: #FFFFFF;
   font-size: 2.25rem;
   line-height: 2.625rem;
-  padding-bottom: 101px;
+  padding-bottom: 50px;
 }
 
 .hero__abiturients-more {
@@ -3126,13 +3163,18 @@ header .social {
           justify-content: center;
 }
 
-.hero {
-  overflow: hidden;
-  margin-bottom: 34px;
+.hero-employment__wrapper {
+  min-height: 525px;
 }
 
-.hero__title {
+.hero__employment-title {
+  color: #FFFFFF;
+  display: none;
   margin: 0;
+  position: absolute;
+  top: 406px;
+  font-size: 2.25rem;
+  line-height: 2.625rem;
 }
 
 .events {
@@ -3667,6 +3709,108 @@ header .social {
 
 .useful__item a:hover {
   color: #485667;
+}
+
+.vacancies__grid {
+  margin-bottom: 40px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  gap: 10px 13px;
+  grid-template-areas: "vacancies__grid-cell--big" " vacancies__grid-cell--1" " vacancies__grid-cell--2";
+}
+
+.vacancies__grid-cell {
+  cursor: pointer;
+  position: relative;
+  height: 191px;
+  overflow: hidden;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 2.5px;
+  overflow: hidden;
+}
+
+.vacancies__grid-cell--big {
+  grid-area: vacancies__grid-cell--big;
+  overflow: hidden;
+}
+
+.vacancies__grid-cell--1 {
+  grid-area: vacancies__grid-cell--1;
+}
+
+.vacancies__grid-cell--2 {
+  grid-area: vacancies__grid-cell--2;
+}
+
+.vacancies__grid-cell img {
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.vacancies__grid-cell:hover img {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.vacancies__grid-cell::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  background: rgba(0, 49, 79, 0.35);
+}
+
+.vacancies__grid-cell:hover::after {
+  background: unset;
+}
+
+.vacancies__info {
+  z-index: 2;
+  content: "";
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  left: 26px;
+  top: 18px;
+  color: #FFFFFF;
+}
+
+.vacancies__info--big {
+  top: 38px;
+}
+
+.vacancies__title {
+  color: #FFFFFF;
+  font-size: 1.25rem;
+  line-height: 1.4375rem;
+  font-weight: 500;
+  max-width: 272px;
+  margin: 0;
+}
+
+.vacancies__title--big {
+  max-width: unset;
+  font-weight: 700;
 }
 
 @media (min-width: 630px) {
@@ -4401,6 +4545,10 @@ header .social {
     height: 55px;
   }
 
+  .hero__employment-title {
+    display: block;
+  }
+
   .events {
     margin-top: 0;
   }
@@ -4492,6 +4640,32 @@ header .social {
     width: 225px;
     border: 1px solid #337AB7;
     padding: 20px;
+  }
+
+  .vacancies__grid {
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "vacancies__grid-cell--big vacancies__grid-cell--1 " "vacancies__grid-cell--big vacancies__grid-cell--2 ";
+  }
+
+  .vacancies__grid-cell--big {
+    width: auto;
+    height: auto;
+  }
+
+  .vacancies__grid-cell {
+    width: auto;
+    height: auto;
+  }
+
+  .vacancies__title {
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+  }
+
+  .vacancies__title--big {
+    font-size: 2.25rem;
+    line-height: 2.625rem;
   }
 }
 

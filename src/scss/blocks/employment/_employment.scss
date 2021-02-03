@@ -1,0 +1,113 @@
+.vacancies__grid {
+    margin-bottom: 40px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 10px 13px;
+    grid-template-areas:
+        "vacancies__grid-cell--big"
+        " vacancies__grid-cell--1"
+        " vacancies__grid-cell--2";
+
+    @media (min-width: $tablet) {
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "vacancies__grid-cell--big vacancies__grid-cell--1 "
+            "vacancies__grid-cell--big vacancies__grid-cell--2 ";
+    }
+}
+
+.vacancies__grid-cell {
+    cursor: pointer;
+    position: relative;
+    height: 191px;
+    overflow: hidden;
+    object-fit: cover;
+    &--big {
+        grid-area: vacancies__grid-cell--big;
+        overflow: hidden;
+        @media (min-width: $tablet) {
+            width: auto;
+            height: auto;
+        }
+    }
+    &--1 {
+        grid-area: vacancies__grid-cell--1;
+    }
+    &--2 {
+        grid-area: vacancies__grid-cell--2;
+    }
+    border-radius: 2.5px;
+    overflow: hidden;
+    @media (min-width: $tablet) {
+        width: auto;
+        height: auto;
+    }
+
+    img {
+        transition: 0.5s;
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &:hover img {
+        transform: scale(1.1);
+    }
+
+    &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        transition: 0.5s;
+        background: rgba(0, 49, 79, 0.35);
+    }
+    &:hover {
+        &::after {
+            background: unset;
+        }
+    }
+}
+
+.vacancies__info {
+    z-index: 2;
+    content: "";
+    width: 100%;
+    height: fit-content;
+    position: absolute;
+    display: flex;
+    left: 26px;
+    top: 18px;
+    color: $c-white-0;
+    &--big {
+        top: 38px;
+    }
+}
+
+.vacancies__title {
+    color: $c-white-0;
+    font-size: rem-calc(20);
+    line-height: rem-calc(23);
+    font-weight: 500;
+    max-width: 272px;
+    margin: 0;
+    @media (min-width: $tablet) {
+        font-size: rem-calc(24);
+        line-height: rem-calc(28);
+    }
+}
+
+.vacancies__title--big {
+    max-width: unset;
+    font-weight: 700;
+    @media (min-width: $tablet) {
+        font-size: rem-calc(36);
+        line-height: rem-calc(42);
+    }
+}

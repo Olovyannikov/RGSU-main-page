@@ -1,6 +1,42 @@
-//main page
+//global styles
+
+.hero {
+    overflow: hidden;
+    margin-bottom: 34px;
+
+    position: relative;
+    min-height: 347px;
+
+    &::after {
+        content: "";
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 49, 79, 0.25);
+        z-index: 0;
+    }
+}
+
 .hero__wrapper {
     z-index: 100;
+
+    position: relative;
+    min-height: 347px;
+
+    &::after {
+        content: "";
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 49, 79, 0.25);
+        z-index: 0;
+    }
 }
 
 .hero-main__wrapper {
@@ -11,6 +47,8 @@
         min-height: 818px;
     }
 }
+
+//main page
 
 .hero-main__container {
     padding-top: 50%;
@@ -92,7 +130,7 @@
     color: $c-white-0;
     font-size: rem-calc(36);
     line-height: rem-calc(42);
-    padding-bottom: 101px;
+    padding-bottom: 50px;
     @media (min-width: $tablet) {
         font-size: rem-calc(60);
         line-height: rem-calc(70);
@@ -110,13 +148,21 @@
     }
 }
 
-//global styles
+//employment
 
-.hero {
-    overflow: hidden;
-    margin-bottom: 34px;
+.hero-employment__wrapper {
+    min-height: 525px;
 }
 
-.hero__title {
+.hero__employment-title {
+    color: $c-white-0;
+    display: none;
     margin: 0;
+    position: absolute;
+    top: 406px;
+    font-size: rem-calc(36);
+    line-height: rem-calc(42);
+    @media (min-width: $tablet) {
+        display: block;
+    }
 }
