@@ -9,16 +9,16 @@ main.main
         .info__container.container
             .info__wrapper
                 span 1335
-                | бюджетных мест
+                | бюджетных <br> мест
             .info__wrapper
                 span 17000
-                | студентов обучается в вузе
+                | студентов <br> обучается в вузе
             .info__wrapper
                 span 14
-                | факультетов и колледж
+                | факультетов <br>  и колледж
             .info__wrapper
                 span 80
-                | направлений подготовки
+                | направлений <br>  подготовки
     include ./components/slider/_slider
     section.directions-grid
         .directions-grid__container.container
@@ -169,20 +169,20 @@ main.main
                     a(href="#").useful__link Факультеты
     section.consult
         .consult__container.container
-            h2.consult__title.title.title--block Получить консультацию
+            h2.consult__title.title.title--secondary Получить консультацию
             form.consult__form
                 input(type="text" id="name" placeholder="Имя").consult__name
                 input(type="email" id="mail" placeholder="Электронная почта").consult__mail
                 input(type="tel" id="tel" placeholder="Телефон").consult__input
                 .consult__select-box
-                    
+
                     select.consult__select
                         option(disabled=true selected=true) Уровень образования
                         option(value="0") Ноль без палочки
                         option(value="1") Бэтмен
                         option(value="2") Владыка ситхов
                     svg(width="14" height="14" fill="#9d9d9d")
-                        use(href="#truechevron")    
+                        use(href="#truechevron")
                 label(for="checkOne").checkbox__label.consult__checkbox Нажимая на кнопку, вы даете согласие на обработку своих  <a href="#"> персональных данных</a>
                     input(type='checkbox' id="checkOne").checkbox__input
                     span.checkbox__appearance

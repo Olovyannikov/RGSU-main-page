@@ -3055,12 +3055,31 @@ header .social {
           box-sizing: border-box;
 }
 
+.hero__container {
+  position: relative;
+  z-index: 1;
+}
+
 .hero-abiturients__container {
   padding-top: 77px;
 }
 
 .hero-abiturients__wrapper {
   height: calc(100vh - 75px - 438px);
+  position: relative;
+  min-height: 347px;
+}
+
+.hero-abiturients__wrapper::after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 49, 79, 0.25);
+  z-index: 0;
 }
 
 .hero__abiturients-title {
@@ -3257,6 +3276,10 @@ header .social {
   padding-bottom: 58px;
 }
 
+.consult__title {
+  padding-bottom: 30px;
+}
+
 .consult__form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3336,16 +3359,20 @@ header .social {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  gap: 19px;
 }
 
 .info__wrapper {
   width: 181px;
   margin-bottom: 46px;
+  background: #F2F4F8;
+  padding-top: 9px;
+  padding-left: 17px;
+  padding-bottom: 15px;
 }
 
 .directions-grid {
-  padding-bottom: 51px;
-  margin-bottom: 42px;
+  margin-bottom: 51px;
 }
 
 .directions-grid__wrapper {
@@ -3400,6 +3427,9 @@ header .social {
   transition: .5s;
   display: block;
   width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .directions-grid__cell:hover img {
@@ -3416,7 +3446,7 @@ header .social {
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(0, 49, 79, 0.25);
+  background: rgba(0, 49, 79, 0.35);
 }
 
 .directions-grid__cell--1 {
@@ -3450,7 +3480,7 @@ header .social {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  top: 16px;
+  bottom: 16px;
   left: 26px;
   color: #FFFFFF;
 }
@@ -3472,7 +3502,7 @@ header .social {
 }
 
 .directions-grid__info--big {
-  top: 33px;
+  bottom: 33px;
 }
 
 .directions-grid__info--big h3 {
@@ -3616,7 +3646,8 @@ header .social {
 
 @media (min-width: 630px) {
   .info__wrapper {
-    width: 240px;
+    width: 234px;
+    margin-bottom: 0;
   }
 }
 
@@ -4329,6 +4360,7 @@ header .social {
 
   .hero-abiturients__wrapper {
     height: calc(100vh - 129px - 223px);
+    min-height: 595px;
   }
 
   .hero__abiturients-title {
@@ -4401,6 +4433,7 @@ header .social {
 
   .info {
     padding-bottom: 81px;
+    padding-top: 26px;
   }
 
   .directions-grid__wrapper {

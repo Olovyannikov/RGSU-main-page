@@ -1,5 +1,6 @@
 .directions {
     padding-bottom: 44px;
+
     hr {
         border: 1px solid rgba(255, 255, 255, 0.25);
         margin: 0 0 15px;
@@ -18,7 +19,6 @@
     -moz-hyphens: auto;
     -webkit-hyphens: auto;
     -ms-hyphens: auto;
-
 }
 
 .directions__list {
@@ -36,10 +36,12 @@
     padding: 25px;
     gap: 12px;
     width: 100%;
+
     a {
         color: $c-white-0;
         display: block;
     }
+
     @media (min-width: $tablet) {
 
         width: 325px;
@@ -68,6 +70,7 @@
 
 .direction__info-wrapper {
     width: 136px;
+
     span {
         font-size: rem-calc(12);
         line-height: rem-calc(14);

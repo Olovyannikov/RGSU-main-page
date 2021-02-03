@@ -5,6 +5,7 @@
     color: $c-black-0;
     @media (min-width: $tablet) {
         padding-bottom: 81px;
+        padding-top: 26px;
     }
     span {
         display: block;
@@ -18,12 +19,18 @@
 .info__container {
     display: flex;
     flex-wrap: wrap;
+    gap: 19px;
 }
 
 .info__wrapper {
     width: 181px;
     margin-bottom: 46px;
+    background: #F2F4F8;
+    padding-top: 9px;
+    padding-left: 17px;
+    padding-bottom: 15px;
     @media (min-width: 630px) {
-        width: 240px;
+        width: 234px;
+        margin-bottom: 0;
     }
 }
