@@ -1,7 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="20fd1486-6c97-43ed-b28d-aee36dd51278" name="Default Changelist" comment="Правки относительно состояния макета на 03.02" />
+    <list default="true" id="20fd1486-6c97-43ed-b28d-aee36dd51278" name="Default Changelist" comment="Правки относительно состояния макета на 03.02">
+      <change afterPath="$PROJECT_DIR$/build/pages.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pug/pages/pages.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pug/sections/_pages.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scss/blocks/pages/_pages.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/css/style.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/css/style.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/img/chicks-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/chicks-3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/img/chicks-full.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/chicks-full.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/img/chicks-full.webp" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/chicks-full.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/img/image 70.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/img/image 70.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/img/image4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/image4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/img/image4.webp" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/image4.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/img/living.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/living.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/img/living.webp" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/living.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/img/main.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/main.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/img/main.webp" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/main.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/img/rgsu.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/rgsu.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/img/rgsu.webp" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/rgsu.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/img/rgsu2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/rgsu2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/img/rgsu2.webp" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/rgsu2.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/js/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/js/script.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/js/script.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/style.scss" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,8 +39,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Pug File" />
         <option value="JavaScript File" />
+        <option value="Pug File" />
       </list>
     </option>
   </component>
@@ -46,6 +72,10 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="C:\Users\excal\OneDrive\Документы\GitHub\RGSU-main-page\node_modules\prettier" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
@@ -85,6 +115,7 @@
       <workItem from="1609309792368" duration="3174000" />
       <workItem from="1611172339000" duration="55000" />
       <workItem from="1612342017297" duration="9307000" />
+      <workItem from="1622101531717" duration="985000" />
     </task>
     <task id="LOCAL-00001" summary="Правки относительно состояния макета на 03.02">
       <created>1612343772658</created>

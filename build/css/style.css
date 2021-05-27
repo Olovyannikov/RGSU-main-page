@@ -1701,6 +1701,34 @@ header .social {
   padding-bottom: 17px;
 }
 
+.pages__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding: 20px 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-height: 200px;
+  width: 900px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: #fff;
+  -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.pages__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
 .accordion {
   margin-bottom: 11px;
 }
@@ -3717,7 +3745,7 @@ header .social {
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
   gap: 10px 13px;
-  grid-template-areas: "vacancies__grid-cell--big" " vacancies__grid-cell--1" " vacancies__grid-cell--2";
+  grid-template-areas: "vacancies__grid-cell--big" " vacancies__grid-cell--1" " vacancies__grid-cell--2";
 }
 
 .vacancies__grid-cell {
@@ -4645,7 +4673,7 @@ header .social {
   .vacancies__grid {
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: "vacancies__grid-cell--big vacancies__grid-cell--1 " "vacancies__grid-cell--big vacancies__grid-cell--2 ";
+    grid-template-areas: "vacancies__grid-cell--big vacancies__grid-cell--1 " "vacancies__grid-cell--big vacancies__grid-cell--2 ";
   }
 
   .vacancies__grid-cell--big {
